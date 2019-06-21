@@ -1,0 +1,79 @@
+
+body {
+    text-align: center;
+    background: #cccccc;
+}
+
+#div_login {
+    width: 520px;
+    height: 260px;
+    margin: 12% auto 0 auto;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+
+#div_form {
+    background: url("../img/bg1.png");
+    padding: 10px;
+    width: 520px;
+    height: 240px;
+    position: relative;
+}
+
+#div_form img {
+    width: 220px;
+}
+
+#div_form table {
+
+    position: absolute;
+    left: 250px;
+    top: 40px;
+    width: 260px;
+    height: 80px;
+    border-spacing: 0px 25px;
+
+}
+
+#div_form table tr {
+    width: 400px;
+    height: 28px;
+    border: none;
+    line-height: 28px;
+
+    background-color: #FFFFFF;
+
+}
+
+#div_form table tr .td1 {
+    padding-left: 5px;
+    padding-top: 8px;
+}
+
+#div_form table tr input {
+    width: 210px;
+    height: 20px;
+    border-style: none;
+}
+
+#div_form table tr td div {
+    width: 80px;
+    background-color: #35AA47;
+
+    text-align: center;
+    position: relative;
+}
+
+#div_form table tr td div input {
+    width: 30px;
+    background-color: #35AA47;
+    color: #FFFFFF;
+}
+#div_form table tr td:hover div input {
+    background-color: #1D943B;  
+}
+
+#div_form table tr td:hover div {
+    background-color: #1D943B;
+}
