@@ -19,8 +19,8 @@
         <h1>人事管理系统</h1>
     </div>
     <div class="wu-header-right">
-        <p><strong class="easyui-tooltip" title="2条未读消息">admin</strong>，欢迎您！</p>
-        <p><a href="#">网站首页</a>|<a href="#">帮助中心</a>|<a href="#">安全退出</a></p>
+        <p><strong class="easyui-tooltip" title="2条未读消息">${pageContext.session.getAttribute("userName")}</strong>，欢迎您！</p>
+        <p><a href="${pageContext.request.contextPath}/index.jsp">网站首页</a>|<a href="#">帮助中心</a>|<a href="${pageContext.request.contextPath}/quitLogin.action">安全退出</a></p>
     </div>
 </div>
 <!-- end of header -->
@@ -56,13 +56,13 @@
 <!-- begin of main -->
 <div class="wu-main" data-options="region:'center'">
     <div id="wu-tabs" class="easyui-tabs" data-options="border:false,fit:true">
-        <div title="首页" data-options="href:'temp/layout-1.html',closable:false,iconCls:'icon-tip',cls:'pd3'"></div>
+        <div title="首页" data-options="href:'welcome.jsp',closable:false,iconCls:'icon-tip',cls:'pd3'"></div>
     </div>
 </div>
 <!-- end of main -->
 <!-- begin of footer -->
 <div class="wu-footer" data-options="region:'south',border:true,split:true">
-    &copy; 2013 Wu All Rights Reserved
+    ©2019-2059 五邑大学计算机通信网络专业&nbsp;&nbsp;&nbsp;javaEE技术开发
 </div>
 <!-- end of footer -->
 <script type="text/javascript">

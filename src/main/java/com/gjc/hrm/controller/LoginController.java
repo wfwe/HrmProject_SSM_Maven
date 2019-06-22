@@ -33,7 +33,7 @@ public class LoginController {
         int rst = userInfService.queryUserInfByLoginName(userInf);
         if (rst == 3){
             request.getSession().setAttribute("userName",userInf.getLoginname());
-            return "main";
+            return "index";
         }else if (rst == 1){
             error.put("error","请输入账号！");
             model.addAttribute("error",error);
