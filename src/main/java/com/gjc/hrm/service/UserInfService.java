@@ -13,4 +13,10 @@ public interface UserInfService {
     int findAllUserCount();
 
     int addUserInf(UserInf userInf);
+
+    UserInf findUserInfById(int id);
+
+    int editUserInf(UserInf userInf);
+
+    int deleteUserInfById(int[] ids);
 }

@@ -31,8 +31,8 @@
             <ul class="easyui-tree wu-side-tree">
                 <li iconCls="icon-users"><a href="javascript:void(0)" data-icon="icon-users" data-link="userTab.jsp" iframe="0">用户管理</a></li>
                 <li iconCls="icon-user-group"><a href="javascript:void(0)" data-icon="icon-user-group" data-link="temp/empTab.html" iframe="0">员工管理</a></li>
-                <li iconCls="icon-book"><a href="javascript:void(0)" data-icon="icon-book" data-link="temp/deptTab.html" iframe="0">部门管理</a></li>
-                <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-cog" data-link="temp/jobTab.html" iframe="0">职位管理</a></li>
+                <li iconCls="icon-book"><a href="javascript:void(0)" data-icon="icon-book" data-link="deptTab.jsp" iframe="0">部门管理</a></li>
+                <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-cog" data-link="jobTab.jsp" iframe="0">职位管理</a></li>
             </ul>
         </div>
         <div title="下载管理" data-options="iconCls:'icon-application-form-edit'" style="padding:5px;">

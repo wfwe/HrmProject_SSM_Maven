@@ -65,4 +65,30 @@ public class UserInfServiceImpl implements UserInfService {
         int rst = userInfMapper.insertSelective(userInf);
         return rst;
     }
+
+    @Override
+    public UserInf findUserInfById(int id) {
+        return userInfMapper.selectByPrimaryKey(id);
+    }
+
+    @Override
+    public int editUserInf(UserInf userInf) {
+        int rst = userInfMapper.updateByPrimaryKeySelective(userInf);
+        return rst;
+    }
+
+    @Override
+    public int deleteUserInfById(int[] ids) {
+        Boolean rst =false;
+        for (int i=0; i<ids.length;i++){
+            int r = userInfMapper.deleteByPrimaryKey(ids[i]);
+            if (r == 1){
+                rst = true;
+            }
+        }
+        if (rst)
+            return 1;
+        else
+            return 0;
+    }
 }

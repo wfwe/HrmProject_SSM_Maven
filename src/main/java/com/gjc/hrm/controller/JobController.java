@@ -1,5 +1,6 @@
 package com.gjc.hrm.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.gjc.hrm.domain.JobInf;
 import com.gjc.hrm.domain.PageBean;
 import com.gjc.hrm.service.JobInfService;
@@ -8,9 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Controller
 public class JobController {
@@ -18,6 +17,32 @@ public class JobController {
     @Autowired
     private JobInfService jobInfService;
 
+
+    @RequestMapping(value = "/findJobInfById.action",produces="text/html;charset=UTF-8")
+    @ResponseBody
+    public String findJobInfById(int id){
+        JobInf jobInf = jobInfService.findJobInfById(id);
+        String rst = JSONObject.toJSON(jobInf).toString();
+        return rst;
+    }
+
+    @RequestMapping("/deleteJobInf.action")
+    @ResponseBody
+    public String deleteJobInf(int[] ids){
+        int rst = jobInfService.deleteJobInf(ids);
+        return rst+"";
+    }
+
+
+    @RequestMapping("/editJobInf.action")
+    @ResponseBody
+    public String editJobInf(JobInf jobInf){
+        if (jobInf.getName() == null || jobInf.getName() == ""
+                || jobInf.getRemark() == null || jobInf.getRemark() == "")
+            return "0";
+        int rst = jobInfService.editJobInf(jobInf);
+        return rst+"";
+    }
 
     @RequestMapping("/AddJobInf.action")
     @ResponseBody

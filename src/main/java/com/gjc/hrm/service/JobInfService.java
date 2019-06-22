@@ -10,4 +10,10 @@ public interface JobInfService {
     int findAllJobCount();
 
     List<JobInf> findAllJobInfPaging(int startIndex, int pageSize);
+
+    int editJobInf(JobInf jobInf);
+
+    JobInf findJobInfById(int id);
+
+    int deleteJobInf(int[] ids);
 }

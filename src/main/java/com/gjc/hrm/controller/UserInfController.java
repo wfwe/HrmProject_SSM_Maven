@@ -45,4 +45,32 @@ public class UserInfController {
        int rst = userInfService.addUserInf(userInf);
         return rst+"";
     }
+
+    @RequestMapping(value = "/findUserInfById.action",produces="text/html;charset=UTF-8")
+    @ResponseBody
+    public String findUserInfById(int id){
+        UserInf userInf = userInfService.findUserInfById(id);
+        String rst = JSONObject.toJSON(userInf).toString();
+        return rst;
+    }
+
+    @RequestMapping("/editUserInf.action")
+    @ResponseBody
+    public String editUserInf(UserInf userInf){
+        if (userInf.getUsername() == null || userInf.getUsername() == ""
+                ||userInf.getStatus() == null )
+            return "0";
+        int rst = userInfService.editUserInf(userInf);
+        return rst+"";
+    }
+
+    @RequestMapping("/deleteUserInfById.action")
+    @ResponseBody
+    public String deleteUserInfById(int[] ids){
+        if (ids.length == 0){
+            return "0";
+        }
+        int rst = userInfService.deleteUserInfById(ids);
+        return rst+"";
+    }
 }

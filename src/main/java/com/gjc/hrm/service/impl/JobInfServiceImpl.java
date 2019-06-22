@@ -34,4 +34,31 @@ public class JobInfServiceImpl implements JobInfService {
         List<JobInf> jobInfList = jobInfMapper.selectByExample(jobInfExample);
         return jobInfList;
     }
+
+    @Override
+    public int editJobInf(JobInf jobInf) {
+        //JobInfExample jobInfExample = new JobInfExample();
+        int rst = jobInfMapper.updateByPrimaryKeySelective(jobInf);
+        return rst;
+    }
+
+    @Override
+    public JobInf findJobInfById(int id) {
+        return jobInfMapper.selectByPrimaryKey(id);
+    }
+
+    @Override
+    public int deleteJobInf(int[] ids) {
+        Boolean rst =false;
+        for (int i=0; i<ids.length;i++){
+            int r = jobInfMapper.deleteByPrimaryKey(ids[i]);
+            if (r == 1){
+                rst = true;
+            }
+        }
+        if (rst)
+            return 1;
+        else
+            return 0;
+    }
 }
