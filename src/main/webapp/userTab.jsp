@@ -29,10 +29,10 @@
             <a href="#" class="easyui-linkbutton" iconCls="icon-edit" onclick="openEdit()" plain="true">修改</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-remove" onclick="remove()" plain="true">删除</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onclick="cancel()" plain="true">取消</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-reload" onclick="reload()" plain="true">刷新</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-reload" onclick="toSearch()" plain="true">刷新</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-print" onclick="openAdd()" plain="true">打印</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-help" onclick="openEdit()" plain="true">帮助</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-undo" onclick="remove()" plain="true">撤销</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-undo" onclick="clearSearch()" plain="true">撤销</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-redo" onclick="cancel()" plain="true">重做</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-sum" onclick="reload()" plain="true">总计</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-back" onclick="reload()" plain="true">返回</a>
@@ -122,11 +122,34 @@
         var endTime = $('#endTime').datebox("getValue");
         //alert(endTime);
         var searchStatus = $("#searchStatus").combobox("getValue");
-        alert(searchStatus);
+        //alert(searchStatus);
         var searchName = $('#searchName').val();
+        //if (($.trim(searchName) == "" || searchName == "")&& startTime == "" && endTime == "" && searchStatus =="") {
+         //   alert("请选择搜索条件");
+         //   return;
+        //}
+        $('#user-datagrid-4').datagrid("load",{
+            startTime : startTime,
+            endTime : endTime,
+            searchStatus : searchStatus,
+            searchName : searchName
+        })
+
         //alert(searchName);
     }
 
+    /**
+     * 清空搜索框
+     */
+
+    function clearSearch(){
+        $('#startTime').combo("setText",'');
+        $('#startTime').combo("setValue",'');
+        $('#searchStatus').combobox("setValue","");
+        $("#endTime").combo("setText",'');
+        $("#endTime").combo("setValue",'');
+        $('#searchName').val("");
+    }
     /**
      * Name 添加记录
      */

@@ -15,6 +15,15 @@ public class UserInfExample {
 
     protected int limit;
 
+    protected String searchName;
+
+    public String getSearchName() {
+        return searchName;
+    }
+
+    public void setSearchName(String searchName) {
+        this.searchName = searchName;
+    }
 
     public int getOffset() {
         return offset;

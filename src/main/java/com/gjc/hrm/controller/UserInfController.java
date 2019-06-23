@@ -9,6 +9,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -21,11 +25,12 @@ public class UserInfController {
 
     @RequestMapping("/findUserInfPaging.action")
     @ResponseBody
-    public String  findUserInfPaging(int page,int rows){
-        int count = userInfService.findAllUserCount();
+    public String  findUserInfPaging(int page,int rows,String startTime,String endTime,String searchStatus,String searchName) throws ParseException {
+        System.out.println(page+":"+rows+":"+startTime+":"+endTime+":"+searchStatus+":"+searchName);
+        int count = userInfService.findAllUserCount(startTime,endTime,searchStatus,searchName);
         PageBean pageBean = new PageBean(page,rows,count);
         pageBean.setTotalRecord(count);
-        List<UserInf> userInfList = userInfService.findAUserInfPaging(pageBean.getStartIndex(),pageBean.getPageSize());
+        List<UserInf> userInfList = userInfService.findAUserInfPaging(pageBean.getStartIndex(),pageBean.getPageSize(),startTime,endTime,searchStatus,searchName);
         Map<String,Object> map = new HashMap<>();
         map.put("rows",userInfList);
         map.put("total",count);

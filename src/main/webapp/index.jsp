@@ -19,8 +19,11 @@
         <h1>人事管理系统</h1>
     </div>
     <div class="wu-header-right">
-        <p><strong class="easyui-tooltip" title="2条未读消息">${pageContext.session.getAttribute("userName")}</strong>，欢迎您！</p>
-        <p><a href="${pageContext.request.contextPath}/index.jsp">网站首页</a>|<a href="#">帮助中心</a>|<a href="${pageContext.request.contextPath}/quitLogin.action">安全退出</a></p>
+        <p></p>
+        <p id="pTime"></p>
+        <p><span><strong class="easyui-tooltip" title="2条未读消息">${pageContext.session.getAttribute("userName")}</strong>，欢迎您！&nbsp;&nbsp;</span>
+            <a href="${pageContext.request.contextPath}/index.jsp">网站首页</a>|<a href="#">帮助中心</a>|<a href="${pageContext.request.contextPath}/quitLogin.action">安全退出</a></p>
+
     </div>
 </div>
 <!-- end of header -->
@@ -75,6 +78,28 @@
             addTab(title,url,iconCls,iframe);
         });
     })
+
+    /*时钟*/
+    //js完成，创建一个定时器（可重复的）
+    var mytime = setInterval(function() {
+        getTime();
+    }, 1000);//1000毫秒==1秒
+    function getTime() {
+        var d = new Date();
+        /*得到月，日，时，分，秒，要处理少10补0  */
+        var M = (d.getMonth() + 1) < 10 ? ('0' + (d.getMonth() + 1)) : (d
+            .getMonth() + 1);
+        var D = d.getDate() < 10 ? ('0' + d.getDate()) : d.getDate();
+        var H = d.getHours() < 10 ? ('0' + d.getHours()) : d.getHours();
+        var m = d.getMinutes() < 10 ? ('0' + d.getMinutes()) : d.getMinutes();
+        var s = d.getSeconds() < 10 ? ('0' + d.getSeconds()) : d.getSeconds();
+        var t = d.getFullYear() + "年" + M + "月" + D
+            + "号&nbsp;&nbsp;" + H + ":" + m + ":" + s
+            + "&nbsp;&nbsp星期" + "日一二三四五六".charAt(d.getDay());
+        ;
+        //将控件的内容修改为处理好的字符串
+        $("#pTime").html(t);
+    }
 
     /**
      * Name 载入树形菜单
