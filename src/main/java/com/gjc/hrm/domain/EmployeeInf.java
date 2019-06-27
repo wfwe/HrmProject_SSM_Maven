@@ -1,5 +1,9 @@
 package com.gjc.hrm.domain;
 
+import com.alibaba.fastjson.annotation.JSONField;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class EmployeeInf {
@@ -29,6 +33,7 @@ public class EmployeeInf {
 
     private String party;
 
+    @JSONField(format = "yyyy-MM-dd")
     private Date birthday;
 
     private String race;
@@ -41,6 +46,7 @@ public class EmployeeInf {
 
     private String remark;
 
+    @JSONField(format = "yyyy-MM-dd HH:mm:ss")
     private Date createDate;
 
     public Integer getId() {
@@ -151,8 +157,17 @@ public class EmployeeInf {
         return birthday;
     }
 
-    public void setBirthday(Date birthday) {
-        this.birthday = birthday;
+    public void setBirthday(String birthday) {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        try {
+            Date bir = sdf.parse(birthday);
+            this.birthday = bir;
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+
+
     }
 
     public String getRace() {

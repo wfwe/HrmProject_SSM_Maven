@@ -35,7 +35,7 @@ public class UserInfController {
         map.put("rows",userInfList);
         map.put("total",count);
         String rst = JSONObject.toJSON(map).toString();
-        System.out.println(rst);
+        //System.out.println(rst);
         return rst;
     }
 

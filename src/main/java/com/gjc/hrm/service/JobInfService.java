@@ -16,4 +16,6 @@ public interface JobInfService {
     JobInf findJobInfById(int id);
 
     int deleteJobInf(int[] ids);
+
+    List<JobInf> findAllJobInf();
 }

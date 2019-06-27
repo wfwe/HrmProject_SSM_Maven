@@ -65,4 +65,12 @@ public class JobController {
         map.put("total",count);
         return map;
     }
+
+    @RequestMapping("/findAllJobInf.action")
+    @ResponseBody()
+    public String findAllJobInf(){
+        List<JobInf> jobInfList = jobInfService.findAllJobInf();
+        String rst = JSONObject.toJSON(jobInfList).toString();
+        return rst;
+    }
 }

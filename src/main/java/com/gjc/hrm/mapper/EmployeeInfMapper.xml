@@ -23,11 +23,66 @@
     <result column="REMARK" property="remark" jdbcType="VARCHAR" />
     <result column="CREATE_DATE" property="createDate" jdbcType="TIMESTAMP" />
   </resultMap>
+  <resultMap id="EmpDeptJobResultMap" type="com.gjc.hrm.domain.EmpDeptJob" >
+    <id column="ID" property="id" jdbcType="INTEGER" />
+    <result column="DEPT_ID" property="deptId" jdbcType="INTEGER" />
+    <result column="JOB_ID" property="jobId" jdbcType="INTEGER" />
+    <result column="NAME" property="name" jdbcType="VARCHAR" />
+    <result column="CARD_ID" property="cardId" jdbcType="VARCHAR" />
+    <result column="ADDRESS" property="address" jdbcType="VARCHAR" />
+    <result column="POST_CODE" property="postCode" jdbcType="VARCHAR" />
+    <result column="TEL" property="tel" jdbcType="VARCHAR" />
+    <result column="PHONE" property="phone" jdbcType="VARCHAR" />
+    <result column="QQ_NUM" property="qqNum" jdbcType="VARCHAR" />
+    <result column="EMAIL" property="email" jdbcType="VARCHAR" />
+    <result column="SEX" property="sex" jdbcType="INTEGER" />
+    <result column="PARTY" property="party" jdbcType="VARCHAR" />
+    <result column="BIRTHDAY" property="birthday" jdbcType="TIMESTAMP" />
+    <result column="RACE" property="race" jdbcType="VARCHAR" />
+    <result column="EDUCATION" property="education" jdbcType="VARCHAR" />
+    <result column="SPECIALITY" property="speciality" jdbcType="VARCHAR" />
+    <result column="HOBBY" property="hobby" jdbcType="VARCHAR" />
+    <result column="REMARK" property="remark" jdbcType="VARCHAR" />
+    <result column="CREATE_DATE" property="createDate" jdbcType="TIMESTAMP" />
+    <result column="DEPT_NAME" property="deptName" jdbcType="VARCHAR" />
+    <result column="JOB_NAME" property="jobName" jdbcType="VARCHAR" />
+  </resultMap>
   <sql id="Example_Where_Clause" >
     <where >
       <foreach collection="oredCriteria" item="criteria" separator="or" >
         <if test="criteria.valid" >
           <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="search_Where_Clause" >
+    <where >
+      e.DEPT_ID = d.ID and e.JOB_ID = j.ID
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefixOverrides="and" >
+            and
             <foreach collection="criteria.criteria" item="criterion" >
               <choose >
                 <when test="criterion.noValue" >
@@ -85,28 +140,32 @@
     ID, DEPT_ID, JOB_ID, NAME, CARD_ID, ADDRESS, POST_CODE, TEL, PHONE, QQ_NUM, EMAIL, 
     SEX, PARTY, BIRTHDAY, RACE, EDUCATION, SPECIALITY, HOBBY, REMARK, CREATE_DATE
   </sql>
-  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.gjc.hrm.domain.EmployeeInfExample" >
+  <sql id="EmpDeptJob_Column_List" >
+    e.ID, DEPT_ID, JOB_ID, e.NAME, CARD_ID, ADDRESS, POST_CODE, TEL, PHONE, QQ_NUM, EMAIL,
+    SEX, PARTY, BIRTHDAY, RACE, EDUCATION, SPECIALITY, HOBBY, e.REMARK, CREATE_DATE,d.NAME as DEPT_NAME,j.NAME as JOB_NAME
+  </sql>
+  <select id="selectByExample" resultMap="EmpDeptJobResultMap" parameterType="com.gjc.hrm.domain.EmployeeInfExample" >
     select
     <if test="distinct" >
       distinct
     </if>
-    <include refid="Base_Column_List" />
-    from employee_inf
+    <include refid="EmpDeptJob_Column_List" />
+    from employee_inf e, dept_inf d, job_inf j
     <if test="_parameter != null" >
-      <include refid="Example_Where_Clause" />
+      <include refid="search_Where_Clause" />
     </if>
     <if test="orderByClause != null" >
       order by ${orderByClause}
     </if>
-    <if test="limit != 0">
+    <if test="limit != 0 and limit != null and offset != null">
       limit ${offset},${limit}
     </if>
   </select>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+  <select id="selectByPrimaryKey" resultMap="EmpDeptJobResultMap" parameterType="java.lang.Integer" >
     select 
-    <include refid="Base_Column_List" />
-    from employee_inf
-    where ID = #{id,jdbcType=INTEGER}
+    <include refid="EmpDeptJob_Column_List" />
+    from employee_inf e, dept_inf d, job_inf j
+    where  e.ID = #{id,jdbcType=INTEGER} and e.DEPT_ID = d.ID and e.JOB_ID = j.ID
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from employee_inf
@@ -262,7 +321,7 @@
     </trim>
   </insert>
   <select id="countByExample" parameterType="com.gjc.hrm.domain.EmployeeInfExample" resultType="java.lang.Integer" >
-    select count(*) from employee_inf
+    select count(*) from employee_inf e
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>

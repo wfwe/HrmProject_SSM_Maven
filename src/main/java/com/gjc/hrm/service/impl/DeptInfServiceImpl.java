@@ -61,4 +61,9 @@ public class DeptInfServiceImpl implements DeptInfService {
         int rst = deptInfMapper.insertSelective(deptInf);
         return rst;
     }
+
+    @Override
+    public List<DeptInf> findAllDeptInf() {
+        return deptInfMapper.selectByExample(null);
+    }
 }

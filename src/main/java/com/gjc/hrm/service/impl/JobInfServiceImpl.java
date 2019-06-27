@@ -61,4 +61,9 @@ public class JobInfServiceImpl implements JobInfService {
         else
             return 0;
     }
+
+    @Override
+    public List<JobInf> findAllJobInf() {
+        return jobInfMapper.selectByExample(null);
+    }
 }

@@ -26,12 +26,12 @@ public class UserInfServiceImpl implements UserInfService {
         int rst = 0;
         if (!(StringUtils.isNotBlank(userInf.getLoginname()))){
             //账号未输入
-            rst = 1;
+            rst = -3;
             return rst;
         }
         if (!(StringUtils.isNotBlank(userInf.getPassword()))){
             //密码未输入
-            rst = 2;
+            rst = -2;
             return rst;
         }
         UserInfExample userInfExample = new UserInfExample();
@@ -41,11 +41,11 @@ public class UserInfServiceImpl implements UserInfService {
         if (userInfList.size() > 0){
             if (userInfList.get(0).getPassword().equals(userInf.getPassword())){
                 //登录成功
-                rst = 3;
+                rst = userInfList.get(0).getId();
                 return rst;
             }else {
                 //密码错误
-                rst = 4;
+                rst = -4;
                 return rst;
             }
         }
@@ -60,21 +60,24 @@ public class UserInfServiceImpl implements UserInfService {
         UserInfExample userInfExample = new UserInfExample();
         userInfExample.setOffset(startIndex);
         userInfExample.setLimit(pageSize);
-        userInfExample.setSearchName(searchName);
+        //userInfExample.setSearchName(searchName);
         UserInfExample.Criteria criteria = userInfExample.createCriteria();
+        if (!(searchName == null || searchName == "")){
+            criteria.andUsernameLike("%"+searchName+"%");
+        }
         if ( startTime == "" ||startTime == null){
             if (endTime == null || endTime == ""){
             }else{
-                Date date = DateUtil.DateChangeAndAdd(endTime);
-                criteria.andCreatedateLessThanOrEqualTo(date);
+                endDate = DateUtil.DateChangeAndAdd(endTime);
+                criteria.andCreatedateLessThanOrEqualTo(endDate);
             }
         }else {
             startDate = format.parse(startTime);
             if (endTime == null || endTime == ""){
                 criteria.andCreatedateGreaterThanOrEqualTo(startDate);
             }else {
-                Date date = DateUtil.DateChangeAndAdd(endTime);
-                criteria.andCreatedateBetween(startDate,date);
+                endDate = DateUtil.DateChangeAndAdd(endTime);
+                criteria.andCreatedateBetween(startDate,endDate);
             }
         }
         if (!(status ==null || status == "" )){
@@ -90,8 +93,11 @@ public class UserInfServiceImpl implements UserInfService {
         Date startDate = null;
         Date endDate = null;
         UserInfExample userInfExample = new UserInfExample();
-        userInfExample.setSearchName(searchName);
+        //userInfExample.setSearchName(searchName);
         UserInfExample.Criteria criteria = userInfExample.createCriteria();
+        if (!(searchName == null || searchName == "")){
+            criteria.andUsernameLike("%"+searchName+"%");
+        }
         if (startTime == null || startTime == ""){
             if (endTime == null || endTime == ""){
             }else{

@@ -11,20 +11,14 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="copyright" content="All Rights Reserved, Copyright (C) 2013, Wuyeguo, Ltd." />
-    <title>EasyUI Web Admin Power by Wuyeguo</title>
-    <link rel="stylesheet" type="text/css" href="easyui/1.3.4/themes/default/easyui.css" />
-    <link rel="stylesheet" type="text/css" href="css/wu.css" />
-    <link rel="stylesheet" type="text/css" href="css/icon.css" />
-    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
-    <script type="text/javascript" src="easyui/1.3.4/jquery.easyui.min.js"></script>
-    <script type="text/javascript" src="easyui/1.3.4/locale/easyui-lang-zh_CN.js"></script>
+    <title>用戶管理</title>
 </head>
 <body class="easyui-layout">
 
 <div class="easyui-layout" data-options="fit:true">
     <!-- Begin of toolbar -->
     <div id="user-toolbar-4">
-        <div class="user-toolbar-button">
+        <div class="wu-toolbar-button">
             <a href="#" class="easyui-linkbutton" iconCls="icon-add" onclick="openAdd()" plain="true">添加</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-edit" onclick="openEdit()" plain="true">修改</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-remove" onclick="remove()" plain="true">删除</a>
@@ -40,7 +34,7 @@
             <a href="#" class="easyui-linkbutton" iconCls="icon-save" onclick="reload()" plain="true">保存</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-cut" onclick="reload()" plain="true">剪切</a>
         </div>
-        <div class="user-toolbar-search">
+        <div class="wu-toolbar-search">
             <label>起始时间：</label><input id="startTime" name="startTime" class="easyui-datebox" style="width:100px">
             <label>结束时间：</label><input id="endTime" name="endTime" class="easyui-datebox" style="width:100px">
             <label>用户角色：</label>

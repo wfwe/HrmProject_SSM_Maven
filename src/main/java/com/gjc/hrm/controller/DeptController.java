@@ -54,9 +54,9 @@ public class DeptController {
         return  rst+"";
     }
 
-    @RequestMapping("/findAllJobInfPaging.action")
+    @RequestMapping("/findAllDeptInfPaging.action")
     @ResponseBody
-    public Map<String,Object> findAllJobInfPaging(int page,int rows){
+    public Map<String,Object> findAllDeptInfPaging(int page,int rows){
         int count = deptInfService.findAllDeptCount();
         PageBean pageBean = new PageBean(page,rows,count);
         List<DeptInf> deptInfList = deptInfService.findAllDeptInfPaging(pageBean.getStartIndex(),pageBean.getPageSize());
@@ -64,5 +64,13 @@ public class DeptController {
         map.put("rows",deptInfList);
         map.put("total",count);
         return map;
+    }
+
+    @RequestMapping("/findAllDeptInf.action")
+    @ResponseBody
+    public String findAllDeptInf(){
+        List<DeptInf> deptInfList = deptInfService.findAllDeptInf();
+        String rst = JSONObject.toJSON(deptInfList).toString();
+        return rst;
     }
 }

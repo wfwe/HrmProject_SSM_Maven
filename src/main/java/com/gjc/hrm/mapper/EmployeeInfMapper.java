@@ -1,5 +1,6 @@
 package com.gjc.hrm.mapper;
 
+import com.gjc.hrm.domain.EmpDeptJob;
 import com.gjc.hrm.domain.EmployeeInf;
 import com.gjc.hrm.domain.EmployeeInfExample;
 import org.apache.ibatis.annotations.Param;
@@ -17,9 +18,9 @@ public interface EmployeeInfMapper {
 
     int insertSelective(EmployeeInf record);
 
-    List<EmployeeInf> selectByExample(EmployeeInfExample example);
+    List<EmpDeptJob> selectByExample(EmployeeInfExample example);
 
-    EmployeeInf selectByPrimaryKey(Integer id);
+    EmpDeptJob selectByPrimaryKey(Integer id);
 
     int updateByExampleSelective(@Param("record") EmployeeInf record, @Param("example") EmployeeInfExample example);
 

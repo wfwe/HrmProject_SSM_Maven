@@ -20,6 +20,24 @@
         <property name="suffix" value=".jsp" />
     </bean>
 
+    <bean id="multipartResolver"
+          class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="defaultEncoding" value="utf-8"></property>
+        <property name="maxUploadSize" value="5242440"></property>
+    </bean>
+
     <mvc:default-servlet-handler/>
+
+    <!-- 配置拦截器 -->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <!-- 所有的请求都进入拦截器 -->
+
+            <mvc:mapping path="/file/**" />
+            <!-- 配置具体的拦截器 -->
+            <bean class="com.gjc.hrm.interceptor.MyHandlerInterceptor" />
+        </mvc:interceptor>
+    </mvc:interceptors>
+
 
 </beans>

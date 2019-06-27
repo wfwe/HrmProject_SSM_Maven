@@ -27,18 +27,24 @@ public class LoginController {
     @Autowired
     private UserInfService userInfService;
 
+    @RequestMapping("/toLogin.action")
+    public String toLogin(){
+        return "login";
+    }
+
     @RequestMapping(value = "/login.action",method = RequestMethod.POST)
     public String login(HttpServletRequest request,UserInf userInf,Model model){
         Map<String,String> error = new HashMap<>();
         int rst = userInfService.queryUserInfByLoginName(userInf);
-        if (rst == 3){
+        if (rst > 0){
             request.getSession().setAttribute("userName",userInf.getLoginname());
+            request.getSession().setAttribute("userId",rst);
             return "index";
-        }else if (rst == 1){
+        }else if (rst == -3){
             error.put("error","请输入账号！");
             model.addAttribute("error",error);
             return "login";
-        }else if (rst == 2){
+        }else if (rst == -2){
             error.put("error","请输入密码！");
             model.addAttribute("error",error);
             return "login";

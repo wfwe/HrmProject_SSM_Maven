@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gjc.hrm.mapper.NoticeInfMapper" >
+  <resultMap id="BaseResultMap" type="com.gjc.hrm.domain.NoticeInf" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="notice_title" property="noticeTitle" jdbcType="VARCHAR" />
+    <result column="notice_createdate" property="noticeCreatedate" jdbcType="TIMESTAMP" />
+    <result column="is_top" property="isTop" jdbcType="INTEGER" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="notice_people" property="noticePeople" jdbcType="INTEGER" />
+  </resultMap>
+  <resultMap id="SelectResultMap" type="com.gjc.hrm.domain.NoticeUser" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="notice_title" property="noticeTitle" jdbcType="VARCHAR" />
+    <result column="notice_createdate" property="noticeCreatedate" jdbcType="TIMESTAMP" />
+    <result column="is_top" property="isTop" jdbcType="INTEGER" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="notice_people" property="noticePeople" jdbcType="INTEGER" />
+    <result column="username" property="username" jdbcType="VARCHAR" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.gjc.hrm.domain.NoticeInf" extends="BaseResultMap" >
+    <result column="notice_content" property="noticeContent" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Select_Where_Clause" >
+    <where >
+      n.user_id = u.id
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefixOverrides="and" >
+            and
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, notice_title, notice_createdate, is_top, user_id, notice_people
+  </sql>
+  <sql id="Select_Column_List" >
+    n.id, notice_title, notice_createdate, is_top, user_id, notice_people,username
+  </sql>
+  <sql id="Blob_Column_List" >
+    notice_content
+  </sql>
+  <select id="selectByExampleWithBLOBs" resultMap="ResultMapWithBLOBs" parameterType="com.gjc.hrm.domain.NoticeInfExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from notice_inf
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExample" resultMap="SelectResultMap" parameterType="com.gjc.hrm.domain.NoticeInfExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Select_Column_List" />
+    from notice_inf n, user_inf u
+    <if test="_parameter != null" >
+      <include refid="Select_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+    <if test="limit != 0 and limit != null and offset != null">
+      limit ${offset},${limit}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from notice_inf
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from notice_inf
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.gjc.hrm.domain.NoticeInfExample" >
+    delete from notice_inf
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.gjc.hrm.domain.NoticeInf" >
+    insert into notice_inf (id, notice_title, notice_createdate, 
+      is_top, user_id, notice_people, 
+      notice_content)
+    values (#{id,jdbcType=INTEGER}, #{noticeTitle,jdbcType=VARCHAR}, #{noticeCreatedate,jdbcType=TIMESTAMP}, 
+      #{isTop,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{noticePeople,jdbcType=INTEGER}, 
+      #{noticeContent,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.gjc.hrm.domain.NoticeInf" >
+    insert into notice_inf
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="noticeTitle != null" >
+        notice_title,
+      </if>
+      <if test="noticeCreatedate != null" >
+        notice_createdate,
+      </if>
+      <if test="isTop != null" >
+        is_top,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="noticePeople != null" >
+        notice_people,
+      </if>
+      <if test="noticeContent != null" >
+        notice_content,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="noticeTitle != null" >
+        #{noticeTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="noticeCreatedate != null" >
+        #{noticeCreatedate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isTop != null" >
+        #{isTop,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="noticePeople != null" >
+        #{noticePeople,jdbcType=INTEGER},
+      </if>
+      <if test="noticeContent != null" >
+        #{noticeContent,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.gjc.hrm.domain.NoticeInfExample" resultType="java.lang.Integer" >
+    select count(*) from notice_inf
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update notice_inf
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.noticeTitle != null" >
+        notice_title = #{record.noticeTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="record.noticeCreatedate != null" >
+        notice_createdate = #{record.noticeCreatedate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.isTop != null" >
+        is_top = #{record.isTop,jdbcType=INTEGER},
+      </if>
+      <if test="record.userId != null" >
+        user_id = #{record.userId,jdbcType=INTEGER},
+      </if>
+      <if test="record.noticePeople != null" >
+        notice_people = #{record.noticePeople,jdbcType=INTEGER},
+      </if>
+      <if test="record.noticeContent != null" >
+        notice_content = #{record.noticeContent,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExampleWithBLOBs" parameterType="map" >
+    update notice_inf
+    set id = #{record.id,jdbcType=INTEGER},
+      notice_title = #{record.noticeTitle,jdbcType=VARCHAR},
+      notice_createdate = #{record.noticeCreatedate,jdbcType=TIMESTAMP},
+      is_top = #{record.isTop,jdbcType=INTEGER},
+      user_id = #{record.userId,jdbcType=INTEGER},
+      notice_people = #{record.noticePeople,jdbcType=INTEGER},
+      notice_content = #{record.noticeContent,jdbcType=LONGVARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update notice_inf
+    set id = #{record.id,jdbcType=INTEGER},
+      notice_title = #{record.noticeTitle,jdbcType=VARCHAR},
+      notice_createdate = #{record.noticeCreatedate,jdbcType=TIMESTAMP},
+      is_top = #{record.isTop,jdbcType=INTEGER},
+      user_id = #{record.userId,jdbcType=INTEGER},
+      notice_people = #{record.noticePeople,jdbcType=INTEGER}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.gjc.hrm.domain.NoticeInf" >
+    update notice_inf
+    <set >
+      <if test="noticeTitle != null" >
+        notice_title = #{noticeTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="noticeCreatedate != null" >
+        notice_createdate = #{noticeCreatedate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isTop != null" >
+        is_top = #{isTop,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null" >
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="noticePeople != null" >
+        notice_people = #{noticePeople,jdbcType=INTEGER},
+      </if>
+      <if test="noticeContent != null" >
+        notice_content = #{noticeContent,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.gjc.hrm.domain.NoticeInf" >
+    update notice_inf
+    set notice_title = #{noticeTitle,jdbcType=VARCHAR},
+      notice_createdate = #{noticeCreatedate,jdbcType=TIMESTAMP},
+      is_top = #{isTop,jdbcType=INTEGER},
+      user_id = #{userId,jdbcType=INTEGER},
+      notice_people = #{noticePeople,jdbcType=INTEGER},
+      notice_content = #{noticeContent,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.gjc.hrm.domain.NoticeInf" >
+    update notice_inf
+    set notice_title = #{noticeTitle,jdbcType=VARCHAR},
+      notice_createdate = #{noticeCreatedate,jdbcType=TIMESTAMP},
+      is_top = #{isTop,jdbcType=INTEGER},
+      user_id = #{userId,jdbcType=INTEGER},
+      notice_people = #{noticePeople,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

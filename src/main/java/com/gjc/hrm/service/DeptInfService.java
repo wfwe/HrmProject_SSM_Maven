@@ -16,4 +16,6 @@ public interface DeptInfService {
     List<DeptInf> findAllDeptInfPaging(int startIndex, int pageSize);
 
     int addDeptInf(DeptInf deptInf);
+
+    List<DeptInf> findAllDeptInf();
 }

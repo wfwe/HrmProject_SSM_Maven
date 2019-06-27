@@ -11,6 +11,11 @@
     <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
     <script type="text/javascript" src="easyui/1.3.4/jquery.easyui.min.js"></script>
     <script type="text/javascript" src="easyui/1.3.4/locale/easyui-lang-zh_CN.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <!--引入引入kindeditor编辑器相关文件-->
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/kindeditor-4.1.10/themes/default/default.css"/>
+    <script charset="utf-8" src="${pageContext.request.contextPath}/kindeditor-4.1.10/kindeditor-all.js"></script>
+    <script charset="utf-8" src="${pageContext.request.contextPath}/kindeditor-4.1.10/lang/zh_CN.js"></script>
 </head>
 <body class="easyui-layout">
 <!-- begin of header -->
@@ -33,19 +38,20 @@
         <div title="管理中心" data-options="iconCls:'icon-application-cascade'" style="padding:5px;">
             <ul class="easyui-tree wu-side-tree">
                 <li iconCls="icon-users"><a href="javascript:void(0)" data-icon="icon-users" data-link="userTab.jsp" iframe="0">用户管理</a></li>
-                <li iconCls="icon-user-group"><a href="javascript:void(0)" data-icon="icon-user-group" data-link="temp/empTab.html" iframe="0">员工管理</a></li>
+                <li iconCls="icon-user-group"><a href="javascript:void(0)" data-icon="icon-user-group" data-link="empTab.jsp" iframe="0">员工管理</a></li>
                 <li iconCls="icon-book"><a href="javascript:void(0)" data-icon="icon-book" data-link="deptTab.jsp" iframe="0">部门管理</a></li>
                 <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-cog" data-link="jobTab.jsp" iframe="0">职位管理</a></li>
             </ul>
         </div>
         <div title="下载管理" data-options="iconCls:'icon-application-form-edit'" style="padding:5px;">
             <ul class="easyui-tree wu-side-tree">
-                <li iconCls="icon-chart-organisation"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="layout-3.html" iframe="0">文档操作</a></li>
+                <li iconCls="icon-chart-organisation"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="views/loadTab.jsp" iframe="0">文件操作</a></li>
             </ul>
         </div>
         <div title="公告管理" data-options="iconCls:'icon-creditcards'" style="padding:5px;">
             <ul class="easyui-tree wu-side-tree">
-                <li iconCls="icon-chart-organisation"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="layout-3.html" iframe="0">公告操作</a></li>
+                <li iconCls="icon-chart-organisation"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="views/noticeTab.jsp" iframe="0">公告操作</a></li>
+                <li iconCls="icon-chart-organisation"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="views/addNotice.jsp" iframe="0" >添加公告</a></li>
             </ul>
         </div>
         <div title="系统设置" data-options="iconCls:'icon-wrench'" style="padding:5px;">

@@ -10,25 +10,19 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="copyright" content="All Rights Reserved, Copyright (C) 2013, Wuyeguo, Ltd." />
+    <meta name="copyright" content="All Rights Reserved, Copyright (C) 2013, Gjc." />
     <title>部门管理</title>
-    <link rel="stylesheet" type="text/css" href="easyui/1.3.4/themes/default/easyui.css" />
-    <link rel="stylesheet" type="text/css" href="css/wu.css" />
-    <link rel="stylesheet" type="text/css" href="css/icon.css" />
-    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
-    <script type="text/javascript" src="easyui/1.3.4/jquery.easyui.min.js"></script>
-    <script type="text/javascript" src="easyui/1.3.4/locale/easyui-lang-zh_CN.js"></script>
 </head>
 <body class="easyui-layout">
 
 <div class="easyui-layout" data-options="fit:true">
     <!-- Begin of toolbar -->
     <div id="dept-toolbar-4">
-        <div class="dept-toolbar-button">
-            <a href="#" class="easyui-linkbutton" iconCls="icon-add" onclick="openAdd()" plain="true">添加</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-edit" onclick="openEdit()" plain="true">修改</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-remove" onclick="remove()" plain="true">删除</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-reload" onclick="reload()" plain="true">刷新</a>
+        <div class="wu-toolbar-button">
+            <a href="#" class="easyui-linkbutton" iconCls="icon-add" onclick="openAddDept()" plain="true">添加</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-edit" onclick="openEditDept()" plain="true">修改</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-remove" onclick="removeDept()" plain="true">删除</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-reload" onclick="reloadDept()" plain="true">刷新</a>
         </div>
     </div>
     <!-- End of toolbar -->
@@ -58,7 +52,7 @@
     /**
      * Name 添加记录
      */
-    function add(){
+    function addDept(){
         $('#dept-form-2').form('submit', {
             url:'${pageContext.request.contextPath}/addDeptInf.action',
             onSubmit : function() {
@@ -81,7 +75,7 @@
     /**
      * 刷新页面
      */
-    function reload() {
+    function reloadDept() {
         $('#dept-datagrid-4').datagrid("reload");
     }
 
@@ -89,7 +83,7 @@
     /**
      * Name 修改记录
      */
-    function edit(){
+    function editDept(){
         $('#dept-form-2').form('submit', {
             url:'${pageContext.request.contextPath}/editDeptInf.action',
             success:function(data){
@@ -109,7 +103,7 @@
     /**
      * Name 删除记录
      */
-    function remove(){
+    function removeDept(){
         $.messager.confirm('信息提示','确定要删除该记录？', function(result){
             if(result){
                 var items = $('#dept-datagrid-4').datagrid('getSelections');
@@ -142,8 +136,8 @@
     /**
      * Name 打开添加窗口
      */
-    function openAdd(){
-        $('#dept-form-2').form('clear');
+    function openAddDept(){
+        //$('#dept-form-2').form('clear');
         $('#dept-dialog-2').dialog({
             closed: false,
             modal:true,
@@ -151,7 +145,7 @@
             buttons: [{
                 text: '确定',
                 iconCls: 'icon-ok',
-                handler: add
+                handler: addDept
             }, {
                 text: '取消',
                 iconCls: 'icon-cancel',
@@ -165,7 +159,7 @@
     /**
      * Name 打开修改窗口
      */
-    function openEdit(){
+    function openEditDept(){
         var item = $('#dept-datagrid-4').datagrid('getSelected');
         if (item == null)
             alert("请选择要更新信息的部门");
@@ -192,7 +186,7 @@
             buttons: [{
                 text: '确定',
                 iconCls: 'icon-ok',
-                handler: edit
+                handler: editDept
             }, {
                 text: '取消',
                 iconCls: 'icon-cancel',
@@ -207,7 +201,7 @@
      * Name 载入数据
      */
     $('#dept-datagrid-4').datagrid({
-        url:'${pageContext.request.contextPath}/findAllJobInfPaging.action',
+        url:'${pageContext.request.contextPath}/findAllDeptInfPaging.action',
         //loadFilter:pagerFilter,
         rownumbers:true,
         singleSelect:false,
