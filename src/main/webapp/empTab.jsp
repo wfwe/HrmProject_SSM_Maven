@@ -26,17 +26,8 @@
             <a href="#" class="easyui-linkbutton" iconCls="icon-add" onclick="openEmpAdd()" plain="true">添加</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-edit" onclick="openEmpEdit()" plain="true">修改</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-remove" onclick="removeEmp()" plain="true">删除</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onclick="cancel()" plain="true">取消</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-reload" onclick="toSearchEmp()" plain="true">刷新</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-print" onclick="openAdd()" plain="true">打印</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-help" onclick="openEdit()" plain="true">帮助</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-undo" onclick="clearSearchEmp()" plain="true">撤销</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-redo" onclick="cancel()" plain="true">重做</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-sum" onclick="reload()" plain="true">总计</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-back" onclick="reload()" plain="true">返回</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-tip" onclick="reload()" plain="true">提示</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-save" onclick="reload()" plain="true">保存</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-cut" onclick="reload()" plain="true">剪切</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-undo" onclick="clearSearchEmp()" plain="true">清空</a>
         </div>
         <div class="user-toolbar-search">
             <label>开始时间：</label><input id="startTimeEmp" name="startTime" class="easyui-datebox" style="width:100px">
@@ -314,9 +305,13 @@
      * Name 删除记录
      */
     function removeEmp(){
+        var items = $('#emp-datagrid-4').datagrid('getSelections');
+        if (items.length <= 0){
+            alert("请选择要删除的数据！");
+            return;
+        }
         $.messager.confirm('信息提示','确定要删除该记录？', function(result){
             if(result){
-                var items = $('#emp-datagrid-4').datagrid('getSelections');
                 if (items = null){
                     alert("请选择要删除的员工信息");
                 }
@@ -377,7 +372,7 @@
         var item = $('#emp-datagrid-4').datagrid('getSelected');
         //alert(item.id);
         if (item == null){
-            alert("请选择要更新信息的职位");return;
+            alert("请选择要更新的员工信息");return;
         }
         $('#emp-dialog-1').dialog({
             closed: false,

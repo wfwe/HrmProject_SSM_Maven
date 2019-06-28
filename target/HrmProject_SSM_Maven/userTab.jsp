@@ -22,17 +22,8 @@
             <a href="#" class="easyui-linkbutton" iconCls="icon-add" onclick="openAdd()" plain="true">添加</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-edit" onclick="openEdit()" plain="true">修改</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-remove" onclick="remove()" plain="true">删除</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onclick="cancel()" plain="true">取消</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-reload" onclick="toSearch()" plain="true">刷新</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-print" onclick="openAdd()" plain="true">打印</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-help" onclick="openEdit()" plain="true">帮助</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-undo" onclick="clearSearch()" plain="true">撤销</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-redo" onclick="cancel()" plain="true">重做</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-sum" onclick="reload()" plain="true">总计</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-back" onclick="reload()" plain="true">返回</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-tip" onclick="reload()" plain="true">提示</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-save" onclick="reload()" plain="true">保存</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-cut" onclick="reload()" plain="true">剪切</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-undo" onclick="clearSearch()" plain="true">清空</a>
         </div>
         <div class="wu-toolbar-search">
             <label>起始时间：</label><input id="startTime" name="startTime" class="easyui-datebox" style="width:100px">
@@ -166,17 +157,6 @@
             }
         });
     }
-    //完成两个密码效验
-    $.extend($.fn.validatebox.defaults.rules, {
-        /*必须和某个字段相等*/
-        equalTo : {
-            validator : function(value, param) {
-                return $(param[0]).val() == value;
-            },
-            message : '两次密码不一致',
-
-        },
-    });
 
     /**
      * Name 修改记录
@@ -203,9 +183,13 @@
      * Name 删除记录
      */
     function remove(){
+        var items = $('#user-datagrid-4').datagrid('getSelections');
+        if (items.length <= 0){
+            alert("请选择要删除的数据！");
+            return;
+        }
         $.messager.confirm('信息提示','确定要删除该记录？', function(result){
             if(result){
-                var items = $('#user-datagrid-4').datagrid('getSelections');
                 var ids = [];
                 var names = [];
                 $(items).each(function(){

@@ -7,947 +7,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d348624b-7aa3-4790-9ffb-f981cb76914d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_fileupload_1_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_io_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/json_simple_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/EmpInfController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/NoticeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UploadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/EmpDeptJob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/LoadInf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/LoadInfExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/LoadUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/NoticeInf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/NoticeInfExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/NoticeUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/interceptor/MyHandlerInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/LoadInfMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/LoadInfMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/NoticeInfMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/NoticeInfMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/UserInf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/EmpInfService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/LoadService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/NoticeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/EmpInfServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/LoadServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/NoticeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/empTab.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/changelog.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/accordion/_content.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/accordion/actions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/accordion/ajax.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/accordion/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/accordion/datagrid_data1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/accordion/tools.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/calendar/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/calendar/firstday.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/combo/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/combobox/actions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/combobox/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/combobox/combobox_data1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/combobox/customformat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/combobox/dynamicdata.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/combobox/multiple.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/combobox/navigation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/combobox/remotedata.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/combobox/remotejsonp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/combogrid/actions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/combogrid/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/combogrid/datagrid_data1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/combogrid/initvalue.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/combogrid/multiple.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/combogrid/navigation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/combotree/actions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/combotree/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/combotree/initvalue.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/combotree/multiple.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/combotree/tree_data1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datagrid/aligncolumns.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datagrid/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datagrid/cellstyle.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datagrid/checkbox.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datagrid/clientpagination.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datagrid/columngroup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datagrid/complextoolbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datagrid/contextmenu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datagrid/custompager.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datagrid/datagrid_data1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datagrid/datagrid_data2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datagrid/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datagrid/formatcolumns.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datagrid/frozencolumns.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datagrid/frozenrows.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datagrid/mergecells.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datagrid/products.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datagrid/rowborder.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datagrid/rowediting.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datagrid/rowstyle.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datagrid/selection.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datagrid/simpletoolbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datagrid/transform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datebox/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datebox/dateformat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datebox/events.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datebox/validate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datetimebox/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datetimebox/initvalue.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/datetimebox/showseconds.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/demo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/dialog/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/dialog/complextoolbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/dialog/toolbarbuttons.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/draggable/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/draggable/constain.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/draggable/snap.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/droppable/accept.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/droppable/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/droppable/sort.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/easyloader/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/form/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/form/form_data1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/form/load.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/layout/_content.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/layout/addremove.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/layout/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/layout/complex.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/layout/datagrid_data1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/layout/full.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/layout/nestedlayout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/layout/nocollapsible.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/layout/propertygrid_data1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/layout/tree_data1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/linkbutton/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/linkbutton/group.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/linkbutton/iconalign.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/linkbutton/plain.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/linkbutton/toggle.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/menu/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/menu/customitem.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/menu/events.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/menubutton/actions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/menubutton/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/messager/alert.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/messager/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/messager/interactive.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/messager/position.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/numberbox/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/numberbox/format.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/numberbox/range.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/numberspinner/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/numberspinner/increment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/numberspinner/range.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/pagination/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/pagination/custombuttons.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/pagination/simple.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/panel/_content.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/panel/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/panel/customtools.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/panel/loadcontent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/panel/nestedpanel.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/panel/paneltools.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/progressbar/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/propertygrid/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/propertygrid/customcolumns.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/propertygrid/groupformat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/propertygrid/propertygrid_data1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/resizable/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/searchbox/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/searchbox/category.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/slider/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/slider/formattip.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/slider/rule.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/slider/vertical.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/splitbutton/actions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/splitbutton/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tabs/_content.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tabs/autoheight.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tabs/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tabs/hover.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tabs/nestedtabs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tabs/striptools.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tabs/tabposition.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tabs/tabstools.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tabs/tree_data1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/timespinner/actions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/timespinner/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/timespinner/range.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tooltip/_content.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tooltip/_dialog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tooltip/ajax.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tooltip/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tooltip/customcontent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tooltip/customstyle.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tooltip/position.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tooltip/toolbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tooltip/tooltipdialog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tree/actions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tree/animation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tree/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tree/checkbox.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tree/contextmenu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tree/dnd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tree/editable.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tree/icons.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tree/lines.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tree/tree_data1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/tree/tree_data2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/treegrid/actions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/treegrid/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/treegrid/clientpagination.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/treegrid/contextmenu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/treegrid/editable.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/treegrid/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/treegrid/reports.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/treegrid/treegrid_data1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/treegrid/treegrid_data2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/treegrid/treegrid_data3.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/validatebox/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/validatebox/customtooltip.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/window/basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/window/customtools.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/window/inlinewindow.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/window/modalwindow.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/demo/window/windowlayout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/easyloader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/jquery.easyui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/jquery.edatagrid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/licence_gpl.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/license_commercial.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/locale/easyui-lang-af.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/locale/easyui-lang-ar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/locale/easyui-lang-bg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/locale/easyui-lang-ca.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/locale/easyui-lang-cs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/locale/easyui-lang-cz.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/locale/easyui-lang-da.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/locale/easyui-lang-de.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/locale/easyui-lang-el.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/locale/easyui-lang-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/locale/easyui-lang-es.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/locale/easyui-lang-fr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/locale/easyui-lang-it.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/locale/easyui-lang-jp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/locale/easyui-lang-nl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/locale/easyui-lang-pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/locale/easyui-lang-pt_BR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/locale/easyui-lang-ru.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/locale/easyui-lang-sv_SE.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/locale/easyui-lang-tr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/locale/easyui-lang-zh_CN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/locale/easyui-lang-zh_TW.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.accordion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.calendar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.combo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.combobox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.combogrid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.combotree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.datagrid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.datebox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.datetimebox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.dialog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.draggable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.droppable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.linkbutton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.menubutton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.messager.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.numberbox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.numberspinner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.pagination.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.panel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.parser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.progressbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.propertygrid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.resizable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.searchbox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.spinner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.splitbutton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.tabs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.timespinner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.tooltip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.tree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.treegrid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.validatebox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/plugins/jquery.window.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/src/easyloader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/src/jquery.accordion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/src/jquery.calendar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/src/jquery.combobox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/src/jquery.datebox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/src/jquery.draggable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/src/jquery.droppable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/src/jquery.form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/src/jquery.linkbutton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/src/jquery.menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/src/jquery.parser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/src/jquery.progressbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/src/jquery.propertygrid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/src/jquery.resizable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/src/jquery.slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/src/jquery.tabs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/src/jquery.window.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/accordion.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/calendar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/combo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/combobox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/datagrid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/datebox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/dialog.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/easyui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/images/Thumbs.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/images/accordion_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/images/blank.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/images/calendar_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/images/combo_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/images/datagrid_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/images/datebox_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/images/layout_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/images/linkbutton_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/images/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/images/menu_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/images/messager_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/images/pagination_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/images/panel_tools.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/images/searchbox_button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/images/slider_handle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/images/spinner_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/images/tabs_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/images/tree_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/images/validatebox_warning.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/layout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/linkbutton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/menu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/menubutton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/messager.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/pagination.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/panel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/progressbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/propertygrid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/searchbox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/slider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/spinner.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/splitbutton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/tabs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/tooltip.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/tree.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/validatebox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/black/window.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/accordion.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/calendar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/combo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/combobox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/datagrid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/datebox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/dialog.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/easyui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/images/Thumbs.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/images/accordion_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/images/blank.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/images/calendar_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/images/combo_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/images/datagrid_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/images/datebox_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/images/layout_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/images/linkbutton_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/images/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/images/menu_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/images/messager_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/images/pagination_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/images/panel_tools.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/images/searchbox_button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/images/slider_handle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/images/spinner_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/images/tabs_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/images/tree_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/images/validatebox_warning.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/layout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/linkbutton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/menu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/menubutton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/messager.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/pagination.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/panel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/progressbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/propertygrid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/searchbox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/slider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/spinner.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/splitbutton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/tabs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/tooltip.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/tree.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/validatebox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/bootstrap/window.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/accordion.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/calendar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/combo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/combobox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/datagrid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/datebox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/dialog.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/easyui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/images/Thumbs.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/images/accordion_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/images/blank.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/images/calendar_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/images/combo_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/images/datagrid_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/images/datebox_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/images/layout_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/images/linkbutton_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/images/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/images/menu_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/images/messager_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/images/pagination_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/images/panel_tools.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/images/panel_tools11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/images/searchbox_butn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/images/searchbox_button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/images/slider_handle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/images/spinner_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/images/tabs_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/images/tree_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/images/validatebox_warning.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/layout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/linkbutton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/menu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/menubutton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/messager.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/pagination.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/panel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/progressbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/propertygrid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/searchbox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/slider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/spinner.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/splitbutton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/tabs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/tooltip.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/tree.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/validatebox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/default/window.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/accordion.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/calendar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/combo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/combobox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/datagrid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/datebox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/dialog.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/easyui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/images/Thumbs.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/images/accordion_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/images/blank.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/images/calendar_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/images/combo_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/images/datagrid_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/images/datebox_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/images/layout_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/images/linkbutton_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/images/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/images/menu_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/images/messager_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/images/pagination_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/images/panel_tools.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/images/searchbox_button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/images/slider_handle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/images/spinner_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/images/tabs_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/images/tree_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/images/validatebox_warning.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/layout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/linkbutton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/menu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/menubutton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/messager.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/pagination.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/panel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/progressbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/propertygrid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/searchbox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/slider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/spinner.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/splitbutton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/tabs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/tooltip.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/tree.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/validatebox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/gray/window.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/icon.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/icons/back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/icons/blank.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/icons/cancel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/icons/cut.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/icons/edit_add.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/icons/edit_remove.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/icons/filesave.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/icons/help.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/icons/mini_add.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/icons/mini_edit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/icons/mini_refresh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/icons/no.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/icons/ok.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/icons/pencil.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/icons/print.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/icons/redo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/icons/reload.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/icons/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/icons/sum.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/icons/tip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/icons/undo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/accordion.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/calendar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/combo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/combobox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/datagrid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/datebox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/dialog.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/easyui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/images/Thumbs.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/images/accordion_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/images/blank.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/images/calendar_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/images/combo_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/images/datagrid_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/images/datebox_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/images/layout_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/images/linkbutton_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/images/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/images/menu_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/images/messager_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/images/pagination_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/images/panel_tools.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/images/searchbox_button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/images/slider_handle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/images/spinner_arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/images/tabs_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/images/tree_icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/images/validatebox_warning.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/layout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/linkbutton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/menu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/menubutton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/messager.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/pagination.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/panel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/progressbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/propertygrid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/searchbox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/slider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/spinner.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/splitbutton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/tabs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/tooltip.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/tree.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/validatebox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/metro/window.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/advice.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/advices.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/ceo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/chuku.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/confirm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/cpxxgl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/dayin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/engh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/excel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/exit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/fahuo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/fenlei.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/fuwenben.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/fuwenbens.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/fwcj.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/fwcl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/fwfk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/fwfp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/fwgd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/fwgl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/guanbi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/guanlian.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/guanliyuan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/iconfont-shanchu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/iconfont-tianjia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/iconfont-xiugai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/iconfuwenben.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/item.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/jcsjgl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/jiantou.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/jiaocai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/jiaocaih.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/jiaofu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/jwjl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/kaiqi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/kaoh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/kaoyan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/kfcg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/khfwfx.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/khgcfx.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/khgl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/khgxfx.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/khkfjh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/khlsfx.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/khlsgl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/khxxgl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/lsdd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/lxr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/modifyPassword.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/order.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/orderInfo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/password.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/qita.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/remen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/reset.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/ruku.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/saoma.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/school.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/schoolceo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/ser2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/shangjia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/shouye.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/shuben.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/shuguan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/shujia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/shujias.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/siji.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/sjzdgl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/sjzdlbgl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/student.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/students.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/sushe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/tag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/tags.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/tan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/tjbb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/tuichu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/tupian.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/tupians.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/user.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/userh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/wenzhang.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/wenzhangs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/xiajia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/xitong.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/xiugaimimaicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/yasi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/yxgl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/yxjhgl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/usericons/zzkf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/ueditor.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/ueditor.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/asp.net/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/asp.net/bin/LitJSON.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/asp.net/demo.aspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/asp.net/file_manager_json.ashx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/asp.net/upload_json.ashx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/asp/JSON_2.0.4.asp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/asp/UpLoad_Class.asp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/asp/demo.asp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/asp/file_manager_json.asp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/asp/upload_json(1).asp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/auto-height.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/colorpicker.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/custom-plugin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/custom-theme.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/default.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/dialog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/dynamic-load.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/file-dialog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/file-manager.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/filter-mode.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/image-dialog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/jquery-ui.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/jquery-ui/css/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/jquery-ui/css/smoothness/images/ui-bg_flat_75_ffffff_40x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/jquery-ui/css/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/jquery-ui/css/smoothness/images/ui-bg_glass_65_ffffff_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/jquery-ui/css/smoothness/images/ui-bg_glass_75_dadada_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/jquery-ui/css/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/jquery-ui/css/smoothness/images/ui-bg_glass_95_fef1ec_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/jquery-ui/css/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/jquery-ui/css/smoothness/images/ui-icons_222222_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/jquery-ui/css/smoothness/images/ui-icons_2e83ff_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/jquery-ui/css/smoothness/images/ui-icons_454545_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/jquery-ui/css/smoothness/images/ui-icons_888888_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/jquery-ui/css/smoothness/images/ui-icons_cd0a0a_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/jquery-ui/css/smoothness/jquery-ui-1.9.2.custom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/jquery-ui/css/smoothness/jquery-ui-1.9.2.custom.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/jquery-ui/js/jquery-ui-1.9.2.custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/jquery-ui/js/jquery-ui-1.9.2.custom.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/jquery.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/multi-image-dialog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/multi-language.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/newline.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/node.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/paste-type.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/qqstyle.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/readonly.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/simple.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/uploadbutton.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/url-type.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/examples/word-count.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/jsp/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/jsp/demo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/jsp/file_manager_json.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/jsp/upload_json.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/kindeditor-all-min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/kindeditor-all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/kindeditor-min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/kindeditor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/lang/ar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/lang/en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/lang/ko.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/lang/zh_CN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/lang/zh_TW.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/license.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/php/JSON.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/php/demo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/php/file_manager_json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/php/upload_json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/anchor/anchor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/autoheight/autoheight.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/baidumap/baidumap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/baidumap/index(1).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/baidumap/map.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/clearhtml/clearhtml.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/code/code.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/code/prettify.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/code/prettify.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/emoticons.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/100.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/101.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/102.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/103.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/104.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/105.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/106.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/107.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/108.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/109.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/110.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/111.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/112.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/113.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/114.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/115.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/116.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/117.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/118.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/119.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/120.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/121.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/122.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/123.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/124.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/125.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/126.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/127.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/128.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/129.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/130.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/131.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/132.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/133.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/134.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/17.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/18.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/19.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/20.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/21.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/22.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/23.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/25.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/26.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/27.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/28.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/29.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/30.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/31.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/32.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/33.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/34.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/35.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/36.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/37.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/38.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/39.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/40.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/41.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/42.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/43.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/45.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/46.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/47.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/48.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/49.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/51.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/52.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/53.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/54.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/55.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/56.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/57.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/58.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/59.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/61.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/62.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/63.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/65.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/66.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/67.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/68.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/69.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/70.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/71.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/72.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/73.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/74.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/75.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/76.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/77.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/78.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/79.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/80.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/81.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/82.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/83.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/84.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/85.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/86.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/87.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/88.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/89.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/90.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/91.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/92.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/93.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/94.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/95.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/96.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/97.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/98.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/99.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/emoticons/images/static.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/filemanager/filemanager.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/filemanager/images/file-16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/filemanager/images/file-64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/filemanager/images/folder-16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/filemanager/images/folder-64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/filemanager/images/go-up.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/flash/flash.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/image/image.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/image/images/align_left(1).gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/image/images/align_right.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/image/images/align_top.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/image/images/refresh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/insertfile/insertfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/lineheight/lineheight.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/link/link.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/map/map.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/map/map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/media/media.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/multiimage/images/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/multiimage/images/select-files-en.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/multiimage/images/select-files-zh_CN.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/multiimage/images/swfupload.swf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/multiimage/multiimage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/pagebreak/pagebreak.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/plainpaste/plainpaste.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/preview/preview.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/quickformat/quickformat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/table/table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/template/html/1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/template/html/2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/template/html/3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/template/template.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/plugins/wordpaste/wordpaste.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/themes/common/anchor.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/themes/common/blank.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/themes/common/flash.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/themes/common/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/themes/common/media.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/themes/common/rm.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/themes/default/background(1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/themes/default/default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/themes/default/default.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/themes/qq/editor.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/themes/qq/qq.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/themes/simple/simple.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/addNotice.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/loadTab.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/noticeShow.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/noticeTab.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/util/RandomValidateCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/verifyimg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login_style/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login_style/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login_style/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login_style/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login_style/jparticle.jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login_style/layui.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login_style/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login_style/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login_style/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/DeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/DeptController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/JobController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/JobController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UserInfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UserInfController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/EmployeeInf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/EmployeeInf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/EmployeeInfExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/EmployeeInfExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/DeptInfMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/DeptInfMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/EmployeeInfMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/EmployeeInfMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/EmployeeInfMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/EmployeeInfMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/JobInfMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/JobInfMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/UserInfMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/UserInfMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/DeptInfService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/DeptInfService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/JobInfService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/JobInfService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/DeptInfServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/DeptInfServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/JobInfServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/JobInfServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/UserInfServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/UserInfServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/addemp.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/deptTab.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/deptTab.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/empTab.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/empTab.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jobTab.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jobTab.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/main.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/selectEmp.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/css/supersized.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/img/backgrounds/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/img/backgrounds/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/img/backgrounds/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/img/backgrounds/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/img/bg1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/img/lock.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/img/logo2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/img/memeber.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/img/right.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/js/jquery-1.8.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/js/supersized-init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/js/supersized.3.2.7.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/userTab.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userTab.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/WEB-INF/classes/com/gjc/hrm/mapper/DeptInfMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/WEB-INF/classes/com/gjc/hrm/mapper/DeptInfMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/WEB-INF/classes/com/gjc/hrm/mapper/EmployeeInfMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/WEB-INF/classes/com/gjc/hrm/mapper/EmployeeInfMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/WEB-INF/classes/com/gjc/hrm/mapper/JobInfMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/WEB-INF/classes/com/gjc/hrm/mapper/JobInfMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/WEB-INF/classes/com/gjc/hrm/mapper/UserInfMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/WEB-INF/classes/com/gjc/hrm/mapper/UserInfMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/WEB-INF/classes/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/WEB-INF/classes/spring/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/addemp.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/main.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/selectEmp.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/css/supersized.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/img/backgrounds/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/img/backgrounds/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/img/backgrounds/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/img/backgrounds/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/img/bg1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/img/lock.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/img/logo2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/img/memeber.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/img/right.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/js/jquery-1.8.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/js/supersized-init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/js/supersized.3.2.7.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/userTab.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/userTab.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gjc/hrm/mapper/DeptInfMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gjc/hrm/mapper/DeptInfMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gjc/hrm/mapper/EmployeeInfMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gjc/hrm/mapper/EmployeeInfMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gjc/hrm/mapper/JobInfMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gjc/hrm/mapper/JobInfMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gjc/hrm/mapper/UserInfMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gjc/hrm/mapper/UserInfMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -959,94 +68,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NoticeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/NoticeController.java">
+      <file leaf-file-name="filter.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/filter.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="group_add.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/group_add.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="help.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/help.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="large_chart.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/large_chart.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="62" column="38" lean-forward="true" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
+            <state relative-caret-position="125">
+              <caret line="47" column="46" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NoticeService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/NoticeService.java">
+      <file leaf-file-name="druid.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/properties/druid.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="db.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/properties/db.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="icon.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icon.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="127">
+              <caret line="103" column="1" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NoticeServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/NoticeServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="110" column="27" lean-forward="true" selection-start-line="110" selection-start-column="27" selection-end-line="110" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+      <file leaf-file-name="large_shapes.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/large_shapes.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="DeptInfServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/DeptInfServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="35" column="21" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="35" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="noticeTab.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/noticeTab.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="30" column="58" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeptInf.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/DeptInf.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmployeeInf.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/EmployeeInf.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="48" column="4" lean-forward="true" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="empTab.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/empTab.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="32" column="59" lean-forward="true" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NoticeInf.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/NoticeInf.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+      <file leaf-file-name="large_smartart.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/large_smartart.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -1055,17 +135,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>job-dialog-2</find>
-      <find>job-datagrid-4</find>
-      <find>dept-datagrid-4</find>
-      <find>ptime</find>
       <find>name</find>
       <find>findAllJobInfPaging</find>
       <find>editStatus</find>
@@ -1075,7 +151,6 @@
       <find>NAME</find>
       <find>openEdit</find>
       <find>openAdd</find>
-      <find>add</find>
       <find>clearSearch</find>
       <find>remove</find>
       <find>clearSearchEmp</find>
@@ -1092,6 +167,11 @@
       <find>formatHref</find>
       <find>toSearch</find>
       <find>dg</find>
+      <find>icon-chart-organisation</find>
+      <find>group</find>
+      <find>large_clipart.png</find>
+      <find>add</find>
+      <find>large_shapes.png</find>
     </findStrings>
     <replaceStrings>
       <replace>user</replace>
@@ -1103,10 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/EmpDeptJob.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UserInfController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/EmpInfService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/EmployeeInfMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/DeptController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/DeptInfService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/DeptInfServiceImpl.java" />
@@ -1121,17 +197,11 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/jsp/demo.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/common.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/empTab.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/deptTab.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jobTab.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/userTab.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/LoadUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/LoadInfExample.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/LoadInf.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/UserInfServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/LoadInfMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/interceptor/MyHandlerInterceptor.java" />
         <option value="$PROJECT_DIR$/target/HrmProject_SSM_Maven/views/loadTab.jsp" />
@@ -1154,6 +224,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/NoticeServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/noticeTab.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/NoticeInf.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/tologin.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/util/RandomValidateCode.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login_style/layui.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/userTab.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/empTab.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/deptTab.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jobTab.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
       </list>
     </option>
   </component>
@@ -1191,10 +271,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1940" />
-    <option name="height" value="1050" />
+    <option name="x" value="1765" />
+    <option name="y" value="122" />
+    <option name="width" value="1920" />
+    <option name="height" value="1030" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -1204,9 +284,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1237,54 +314,7 @@
               <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
@@ -1292,37 +322,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1337,16 +344,17 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\idea_workspacW\HrmProject_SSM_Maven\src\main\java\com\gjc\hrm\mapper" />
-      <recent name="D:\idea_workspacW\HrmProject_SSM_Maven\src\main\java\com\gjc\hrm\domain" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\idea_workspacW\HrmProject_SSM_Maven\src\main\webapp" />
-      <recent name="D:\idea_workspacW\HrmProject_SSM_Maven\src\main\webapp\js" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.gjc.hrm.controller" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\idea_workspacW\HrmProject_SSM_Maven\src\main\webapp\login_style" />
+      <recent name="D:\idea_workspacW\HrmProject_SSM_Maven\src\main\webapp\images" />
+      <recent name="D:\idea_workspacW\HrmProject_SSM_Maven\src\main\java\com\gjc\hrm\mapper" />
+      <recent name="D:\idea_workspacW\HrmProject_SSM_Maven\src\main\java\com\gjc\hrm\domain" />
       <recent name="D:\idea_workspacW\HrmProject_SSM_Maven\src\main\webapp" />
     </key>
   </component>
@@ -1494,7 +502,8 @@
       <workItem from="1561428559597" duration="8906000" />
       <workItem from="1561524525682" duration="9201000" />
       <workItem from="1561595578419" duration="25182000" />
-      <workItem from="1561632863962" duration="12274000" />
+      <workItem from="1561632863962" duration="12456000" />
+      <workItem from="1561684957270" duration="15586000" />
     </task>
     <task id="LOCAL-00001" summary="完善了部门、职位、用户的增删改查">
       <created>1561221720675</created>
@@ -1510,15 +519,21 @@
       <option name="project" value="LOCAL" />
       <updated>1561270721285</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="完成文件上传下载和公告操作等功能">
+      <created>1561652039279</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1561652039279</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137912000" />
+    <option name="totallyTimeSpent" value="153680000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="1913" y="-5" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
@@ -1531,7 +546,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.43081313" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4336662" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32952926" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
@@ -1539,12 +554,11 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32952926" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.12410842" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23537803" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32707775" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21313673" />
       <window_info id="Web" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32952926" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1552,12 +566,13 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32952926" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32952926" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.12410842" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1572,19 +587,19 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32952926" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14812332" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32952926" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32952926" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33176944" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.43081313" />
     </layout-to-restore>
   </component>
@@ -1705,6 +720,18 @@
           <properties />
           <option name="timeStamp" value="47" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/LoginController.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/LoginController.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/JobController.java</url>
           <line>30</line>
@@ -1714,495 +741,173 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="48" />
+      <option name="time" value="50" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UserInfController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="31" column="39" lean-forward="true" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
-          <folding>
-            <element signature="method#addUserInf#0;class#UserInfController#0" />
-            <element signature="method#findUserInfById#0;class#UserInfController#0" />
-            <element signature="method#editUserInf#0;class#UserInfController#0" />
-            <element signature="method#deleteUserInfById#0;class#UserInfController#0" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/default/images/datagrid_icons.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/LoadInfExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#328#329#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#491#492#0" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/default/images/calendar_arrows.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/UserInfExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/default/images/accordion_arrows.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/UserInf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/default/images/blank.gif">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/EmployeeInfExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="383" column="31" selection-start-line="383" selection-start-column="31" selection-end-line="383" selection-end-column="31" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/default/images/tagbox_icons.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/JobInfServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding>
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#684#685#0" expanded="true" />
-            <element signature="e#1304#1305#0" expanded="true" />
-            <element signature="e#1362#1363#0" expanded="true" />
-            <element signature="e#1762#1763#0" expanded="true" />
-            <element signature="e#1819#1820#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/default/images/slider_handle.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/default/images/validatebox_warning.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/interceptor/MyHandlerInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/default/images/tree_icons.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/LoadInfMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/default/images/tabs_icons.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/LoadInf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/gray/images/datagrid_icons.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jobTab.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/gray/images/combo_arrow.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/HrmProject_SSM_Maven/views/loadTab.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/gray/images/loading.gif">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/PageBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-          <folding>
-            <element signature="e#1278#1279#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/gray/images/spinner_arrows.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/UserInfService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/mini_refresh.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/UserInfServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="84" column="9" lean-forward="true" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/no.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/LoadService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="11" column="128" selection-start-line="11" selection-start-column="128" selection-end-line="11" selection-end-column="128" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/print.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#981#982#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/zoom.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/LoadServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#findLoadCount#0;class#LoadServiceImpl#0" />
-            <element signature="e#4302#4303#0" expanded="true" />
-            <element signature="e#4361#4362#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/user_add.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="95" column="35" lean-forward="true" selection-start-line="95" selection-start-column="35" selection-end-line="95" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/undo.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
-          <folding>
-            <element signature="method#findLoadPaging#0;class#UploadController#0" />
-            <element signature="method#upload#0;class#UploadController#0" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/tip.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/loadTab.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="896">
-          <caret line="119" column="20" lean-forward="true" selection-start-line="119" selection-start-column="20" selection-end-line="119" selection-end-column="20" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/search.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/LoadUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#131#132#0" expanded="true" />
-            <element signature="e#162#163#0" expanded="true" />
-            <element signature="e#210#211#0" expanded="true" />
-            <element signature="e#250#251#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/reload.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/NoticeUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-          <folding>
-            <element signature="e#166#167#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/redo.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/EmpInfController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="30" column="62" lean-forward="true" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/pencil.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/EmpInfService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/ok.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/EmpInfServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="983">
-          <caret line="98" column="13" lean-forward="true" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/more.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/DeptInfExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/mini_edit.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/NoticeInfExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#400#401#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#532#533#0" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/mini_add.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/UserInfMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/man.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/UserInfMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="88" column="25" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
-          <folding>
-            <element signature="n#sql#0;n#mapper#0;n#!!top" />
-            <element signature="n#sql#1;n#mapper#0;n#!!top" />
-            <element signature="n#sql#2;n#mapper#0;n#!!top" />
-            <element signature="n#delete#0;n#mapper#0;n#!!top" />
-            <element signature="n#delete#1;n#mapper#0;n#!!top" />
-            <element signature="n#insert#1;n#mapper#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/lock.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/EmployeeInfMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="161" column="9" selection-start-line="161" selection-start-column="9" selection-end-line="161" selection-end-column="9" />
-          <folding>
-            <element signature="n#resultMap#0;n#mapper#0;n#!!top" />
-            <element signature="n#resultMap#1;n#mapper#0;n#!!top" />
-            <element signature="n#sql#0;n#mapper#0;n#!!top" />
-            <element signature="n#sql#1;n#mapper#0;n#!!top" />
-            <element signature="n#sql#2;n#mapper#0;n#!!top" />
-            <element signature="n#sql#3;n#mapper#0;n#!!top" />
-            <element signature="n#sql#4;n#mapper#0;n#!!top" />
-            <element signature="n#select#1;n#mapper#0;n#!!top" />
-            <element signature="n#delete#0;n#mapper#0;n#!!top" />
-            <element signature="n#delete#1;n#mapper#0;n#!!top" />
-            <element signature="n#insert#0;n#mapper#0;n#!!top" />
-            <element signature="n#insert#1;n#mapper#0;n#!!top" />
-            <element signature="n#update#0;n#mapper#0;n#!!top" />
-            <element signature="n#update#1;n#mapper#0;n#!!top" />
-            <element signature="n#update#2;n#mapper#0;n#!!top" />
-            <element signature="n#update#3;n#mapper#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/large_picture.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/LoadInfMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="22" column="71" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="71" />
-          <folding>
-            <element signature="n#resultMap#0;n#mapper#0;n#!!top" />
-            <element signature="n#sql#0;n#mapper#0;n#!!top" />
-            <element signature="n#sql#2;n#mapper#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/large_clipart.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/JobInfMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="84" column="9" lean-forward="true" selection-start-line="82" selection-start-column="4" selection-end-line="84" selection-end-column="9" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/group.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/NoticeInfMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="161" column="11" selection-start-line="161" selection-start-column="11" selection-end-line="161" selection-end-column="11" />
-          <folding>
-            <element signature="n#resultMap#0;n#mapper#0;n#!!top" />
-            <element signature="n#resultMap#1;n#mapper#0;n#!!top" />
-            <element signature="n#resultMap#1;n#mapper#0;n#!!top" />
-            <element signature="n#sql#0;n#mapper#0;n#!!top" />
-            <element signature="n#sql#1;n#mapper#0;n#!!top" />
-            <element signature="n#sql#1;n#mapper#0;n#!!top" />
-            <element signature="n#sql#2;n#mapper#0;n#!!top" />
-            <element signature="n#sql#3;n#mapper#0;n#!!top" />
-            <element signature="n#select#1;n#mapper#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/clear.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/NoticeInfMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/cancel.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.6.RELEASE/spring-aop-4.2.6.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="163" selection-start-line="163" selection-end-line="163" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/back.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.6.RELEASE/spring-web-4.2.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="132" selection-start-line="132" selection-end-line="132" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/blank.gif">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/addNotice.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/cut.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/edit_add.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/edit_remove.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/filesave.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/filter.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/group_add.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/help.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/large_smartart.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/large_shapes.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/large_chart.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icon.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="127">
+          <caret line="103" column="1" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="179" column="25" lean-forward="true" selection-start-line="179" selection-start-column="25" selection-end-line="179" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/noticeShow.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="71" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/userTab.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="232" column="5" lean-forward="true" selection-start-line="201" selection-start-column="4" selection-end-line="232" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/NoticeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/DeptInfServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="35" column="21" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="35" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/NoticeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="110" column="27" lean-forward="true" selection-start-line="110" selection-start-column="27" selection-end-line="110" selection-end-column="27" />
+        <state relative-caret-position="125">
+          <caret line="47" column="46" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/deptTab.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="78" column="46" selection-start-line="78" selection-start-column="40" selection-end-line="78" selection-end-column="46" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/properties/db.properties">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/empTab.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="32" column="59" lean-forward="true" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/DeptInf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/NoticeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="62" column="38" lean-forward="true" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/noticeTab.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="30" column="58" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/EmployeeInf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="48" column="4" lean-forward="true" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/NoticeInf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/properties/druid.properties">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

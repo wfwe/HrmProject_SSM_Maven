@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="copyright" content="All Rights Reserved, Copyright (C) 2013, Wuyeguo, Ltd." />
-    <title>EasyUI Web Admin Power by Wuyeguo</title>
+    <title>人事管理系统</title>
     <link rel="stylesheet" type="text/css" href="easyui/1.3.4/themes/default/easyui.css" />
     <link rel="stylesheet" type="text/css" href="css/wu.css" />
     <link rel="stylesheet" type="text/css" href="css/icon.css" />
@@ -27,7 +27,7 @@
         <p></p>
         <p id="pTime"></p>
         <p><span><strong class="easyui-tooltip" title="2条未读消息">${pageContext.session.getAttribute("userName")}</strong>，欢迎您！&nbsp;&nbsp;</span>
-            <a href="${pageContext.request.contextPath}/index.jsp">网站首页</a>|<a href="#">帮助中心</a>|<a href="${pageContext.request.contextPath}/quitLogin.action">安全退出</a></p>
+            <a href="${pageContext.request.contextPath}/index.action">网站首页</a>|<a href="#">帮助中心</a>|<a href="${pageContext.request.contextPath}/quitLogin.action">安全退出</a></p>
 
     </div>
 </div>
@@ -38,25 +38,25 @@
         <div title="管理中心" data-options="iconCls:'icon-application-cascade'" style="padding:5px;">
             <ul class="easyui-tree wu-side-tree">
                 <li iconCls="icon-users"><a href="javascript:void(0)" data-icon="icon-users" data-link="userTab.jsp" iframe="0">用户管理</a></li>
-                <li iconCls="icon-user-group"><a href="javascript:void(0)" data-icon="icon-user-group" data-link="empTab.jsp" iframe="0">员工管理</a></li>
+                <li iconCls="icon-group"><a href="javascript:void(0)" data-icon="icon-group" data-link="empTab.jsp" iframe="0">员工管理</a></li>
                 <li iconCls="icon-book"><a href="javascript:void(0)" data-icon="icon-book" data-link="deptTab.jsp" iframe="0">部门管理</a></li>
-                <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-cog" data-link="jobTab.jsp" iframe="0">职位管理</a></li>
+                <li iconCls="icon-large-clipart"><a href="javascript:void(0)" data-icon="icon-large-clipart" data-link="jobTab.jsp" iframe="0">职位管理</a></li>
             </ul>
         </div>
-        <div title="下载管理" data-options="iconCls:'icon-application-form-edit'" style="padding:5px;">
+        <div title="文件管理" data-options="iconCls:'icon-creditcards'" style="padding:5px;">
             <ul class="easyui-tree wu-side-tree">
-                <li iconCls="icon-chart-organisation"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="views/loadTab.jsp" iframe="0">文件操作</a></li>
+                <li iconCls="icon-large-shapes"><a href="javascript:void(0)" data-icon="icon-large-shapes" data-link="views/loadTab.jsp" iframe="0">文件操作</a></li>
             </ul>
         </div>
-        <div title="公告管理" data-options="iconCls:'icon-creditcards'" style="padding:5px;">
+        <div title="公告管理" data-options="iconCls:'icon-application-form-edit'" style="padding:5px;">
             <ul class="easyui-tree wu-side-tree">
                 <li iconCls="icon-chart-organisation"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="views/noticeTab.jsp" iframe="0">公告操作</a></li>
-                <li iconCls="icon-chart-organisation"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="views/addNotice.jsp" iframe="0" >添加公告</a></li>
+                <li iconCls="icon-add"><a href="javascript:void(0)" data-icon="icon-add" data-link="views/addNotice.jsp" iframe="0" >添加公告</a></li>
             </ul>
         </div>
         <div title="系统设置" data-options="iconCls:'icon-wrench'" style="padding:5px;">
             <ul class="easyui-tree wu-side-tree">
-                <li iconCls="icon-chart-organisation"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="layout-3.html" iframe="0">日志操作</a></li>
+                <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-cog" data-link="#" iframe="0">日志操作</a></li>
             </ul>
         </div>
     </div>

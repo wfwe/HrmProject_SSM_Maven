@@ -99,9 +99,13 @@
      * Name 删除记录
      */
     function removeJob(){
+        var items = $('#job-datagrid-4').datagrid('getSelections');
+        if (items.length <= 0){
+            alert("请选择要删除的数据！");
+            return;
+        }
         $.messager.confirm('信息提示','确定要删除该记录？', function(result){
             if(result){
-                var items = $('#job-datagrid-4').datagrid('getSelections');
                 var ids = [];
                 var names = [];
                 $(items).each(function(){
