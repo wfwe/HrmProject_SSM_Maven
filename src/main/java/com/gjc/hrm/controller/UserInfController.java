@@ -46,9 +46,12 @@ public class UserInfController {
                 ||userInf.getLoginname() == null || userInf.getLoginname() == ""
                 ||userInf.getPassword() == null || userInf.getPassword() == ""
                 ||userInf.getStatus() ==null )
-            return "0";
+            return "lack";
        int rst = userInfService.addUserInf(userInf);
-        return rst+"";
+        if (rst ==1)
+            return "ok";
+        else
+            return "fail";
     }
 
     @RequestMapping(value = "/findUserInfById.action",produces="text/html;charset=UTF-8")
@@ -64,18 +67,24 @@ public class UserInfController {
     public String editUserInf(UserInf userInf){
         if (userInf.getUsername() == null || userInf.getUsername() == ""
                 ||userInf.getStatus() == null )
-            return "0";
+            return "lack";
         int rst = userInfService.editUserInf(userInf);
-        return rst+"";
+        if (rst ==1)
+            return "ok";
+        else
+            return "fail";
     }
 
     @RequestMapping("/deleteUserInfById.action")
     @ResponseBody
     public String deleteUserInfById(int[] ids){
         if (ids.length == 0){
-            return "0";
+            return "lack";
         }
         int rst = userInfService.deleteUserInfById(ids);
-        return rst+"";
+        if (rst ==1)
+            return "ok";
+        else
+            return "fail";
     }
 }

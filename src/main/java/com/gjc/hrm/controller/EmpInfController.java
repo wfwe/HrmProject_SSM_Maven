@@ -36,6 +36,14 @@ public class EmpInfController {
         return rst;
     }
 
+    @RequestMapping(value = "/findEmpInf.action",produces = "text/html;charset=UTF-8")
+    @ResponseBody
+    public String findEmpInf(String startTime,String endTime,String searchDept,String searchJob,String searchName) throws ParseException {
+        List<EmpDeptJob> empDeptJobs = empInfService.findEmpInfPaging(0,0,startTime,endTime,searchDept,searchJob,searchName);
+        String rst = JSONObject.toJSON(empDeptJobs).toString();
+        return rst;
+    }
+
     @RequestMapping("/addEmpInf.action")
     @ResponseBody
     public String addEmpInf(EmployeeInf employeeInf){
@@ -43,9 +51,12 @@ public class EmpInfController {
                 ||employeeInf.getName() == null || employeeInf.getName() == ""
                 ||employeeInf.getCardId() == null || employeeInf.getCardId() == ""
                 ||employeeInf.getSex() == null)
-            return "0";
+            return "lack";
         int rst = empInfService.addEmpInf(employeeInf);
-        return rst+"";
+        if (rst ==1)
+            return "ok";
+        else
+            return "fail";
     }
 
     @RequestMapping(value = "/findEmpInfById.action",produces="text/html;charset=UTF-8")
@@ -63,18 +74,24 @@ public class EmpInfController {
                 ||employeeInf.getName() == null || employeeInf.getName() == ""
                 ||employeeInf.getCardId() == null || employeeInf.getCardId() == ""
                 ||employeeInf.getSex() == null)
-            return "0";
+            return "lack";
         int rst = empInfService.editEmpInf(employeeInf);
-        return rst+"";
+        if (rst ==1)
+            return "ok";
+        else
+            return "fail";
     }
 
     @RequestMapping("/deleteEmpInfById.action")
     @ResponseBody
     public String deleteEmpInfById(int[] ids){
         if (ids.length == 0){
-            return "0";
+            return "fail";
         }
         int rst = empInfService.deleteUserInfById(ids);
-        return rst+"";
+        if (rst ==1)
+            return "ok";
+        else
+            return "fail";
     }
 }

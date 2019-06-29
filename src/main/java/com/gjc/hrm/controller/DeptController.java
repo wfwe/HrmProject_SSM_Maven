@@ -31,7 +31,10 @@ public class DeptController {
     @ResponseBody
     public String deleteDeptInfById(int[] ids){
         int rst = deptInfService.deleteDeptInfById(ids);
-        return rst+"";
+        if (rst ==1)
+            return "ok";
+        else
+            return "fail";
     }
 
     @RequestMapping("/editDeptInf.action")
@@ -39,9 +42,12 @@ public class DeptController {
     public String editDeptInf(DeptInf deptInf){
         if (deptInf.getName() == null || deptInf.getName() == ""
                 || deptInf.getRemark() == null || deptInf.getRemark() == "")
-            return "0";
+            return "lack";
         int rst = deptInfService.editDeptInf(deptInf);
-        return  rst+"";
+        if (rst ==1)
+            return "ok";
+        else
+            return "fail";
     }
 
     @RequestMapping("/addDeptInf.action")
@@ -49,9 +55,12 @@ public class DeptController {
     public String addDeptInf(DeptInf deptInf){
         if (deptInf.getName() == null || deptInf.getName() == ""
                 || deptInf.getRemark() == null || deptInf.getRemark() == "")
-            return "0";
+            return "lack";
         int rst = deptInfService.addDeptInf(deptInf);
-        return  rst+"";
+        if (rst ==1)
+            return "ok";
+        else
+            return "fail";
     }
 
     @RequestMapping("/findAllDeptInfPaging.action")

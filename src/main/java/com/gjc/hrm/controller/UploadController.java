@@ -62,6 +62,9 @@ public class UploadController {
     @RequestMapping(value = "/upload",method = RequestMethod.POST)
     @ResponseBody
     public String upload(LoadInf loadInf,MultipartFile file, HttpServletRequest request) throws IOException {
+        if (loadInf.getLoadTitle() == null || loadInf.getLoadTitle() == ""){
+            return "fail";
+        }
         String path = request.getSession().getServletContext().getRealPath("upload");
 
         //设置文件路径名称，不能重复，可以使用uuid
@@ -71,12 +74,10 @@ public class UploadController {
         //获取文件的后缀
         String extName = fileName.substring(fileName.lastIndexOf("."));
 
-        //判断各参数是否为空
-
         int userId = (int) request.getSession().getAttribute("userId");
         loadInf.setLoadUser(userId);
         loadInf.setLoadName(fileName);
-        loadInf.setLoadPath(path+"\\"+uuName+extName);
+        loadInf.setLoadPath(path+"/"+uuName+extName);
 
         File dir = new File(path,uuName+extName);
         if (!dir.exists()){
@@ -99,8 +100,6 @@ public class UploadController {
 
         //file为文件的名称
         LoadInf loadInf =loadService.findLoadById(fileId);
-
-
         //fileName为文件的绝对路径
         InputStream bis = new BufferedInputStream(new FileInputStream(new File(loadInf.getLoadPath())));
 
@@ -113,8 +112,6 @@ public class UploadController {
 
         //设置文件ContentType的类型，如下设置后，会自动判断下载文件类型
         response.setContentType("multipart/form-data");
-
-
 
         BufferedOutputStream out = new BufferedOutputStream(response.getOutputStream());
 

@@ -30,7 +30,10 @@ public class JobController {
     @ResponseBody
     public String deleteJobInf(int[] ids){
         int rst = jobInfService.deleteJobInf(ids);
-        return rst+"";
+        if (rst ==1)
+            return "ok";
+        else
+            return "fail";
     }
 
 
@@ -39,9 +42,12 @@ public class JobController {
     public String editJobInf(JobInf jobInf){
         if (jobInf.getName() == null || jobInf.getName() == ""
                 || jobInf.getRemark() == null || jobInf.getRemark() == "")
-            return "0";
+            return "lack";
         int rst = jobInfService.editJobInf(jobInf);
-        return rst+"";
+        if (rst ==1)
+            return "ok";
+        else
+            return "fail";
     }
 
     @RequestMapping("/AddJobInf.action")
@@ -49,9 +55,12 @@ public class JobController {
     public String AddJobInf(JobInf jobInf){
         if (jobInf.getName() == null || jobInf.getName() == ""
                 || jobInf.getRemark() == null || jobInf.getRemark() == "")
-            return "0";
+            return "lack";
         int rst = jobInfService.addJobInf(jobInf);
-        return rst+"";
+        if (rst ==1)
+            return "ok";
+        else
+            return "fail";
     }
 
     @RequestMapping("/FindAllJobInfPaging.action")

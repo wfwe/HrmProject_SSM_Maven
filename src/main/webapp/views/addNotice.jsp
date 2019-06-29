@@ -55,6 +55,8 @@
                 if (result == "ok") {
                     $.messager.alert("系统提示", "公告发布成功");
                     reset();
+                }else {
+                    $.messager.alert("系统提示","公告发布失败");
                 }
                 //resetValue();
             }
@@ -81,9 +83,11 @@
 
                 resizeMode : 1 ,//编辑器只能调整高度
 
-                //imageUploadJson : '/kindeditor-4.1.7/jsp/upload_json.jsp',
+                uploadJson : '${pageContext.request.contextPath}/kindeditor-4.1.10/jsp/upload_json.jsp',
 
-                //fileManagerJson : '/kindeditor-4.1.7/jsp/file_manager_json.jsp',
+                fileManagerJson : '${pageContext.request.contextPath}/kindeditor-4.1.10/jsp/file_manager_json.jsp',
+
+                allowImageUpload:true,
 
                 allowUpload : true,
 

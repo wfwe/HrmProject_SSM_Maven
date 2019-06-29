@@ -7,56 +7,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d348624b-7aa3-4790-9ffb-f981cb76914d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/util/RandomValidateCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/verifyimg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login_style/font/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login_style/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login_style/font/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login_style/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login_style/jparticle.jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login_style/layui.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login_style/layui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login_style/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login_style/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_fileupload_1_2_1__2_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_io_1_4__2_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/json_simple_1_1__2_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/DeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/DeptController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/EmpInfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/EmpInfController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/JobController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/JobController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UploadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UserInfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UserInfController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/interceptor/MyHandlerInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/interceptor/MyHandlerInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/properties/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/properties/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/deptTab.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/deptTab.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/empTab.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/empTab.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jobTab.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jobTab.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/jsp/file_manager_json.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/jsp/file_manager_json.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/jsp/upload_json.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/jsp/upload_json.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/php/JSON.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/php/demo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/php/file_manager_json.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/php/upload_json.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/css/supersized.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/img/backgrounds/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/img/backgrounds/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/img/backgrounds/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/img/backgrounds/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/img/bg1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/img/lock.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/img/logo2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/img/memeber.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/img/right.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/js/jquery-1.8.2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/js/supersized-init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login_style/js/supersized.3.2.7.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/userTab.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userTab.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/addNotice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/addNotice.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/loadTab.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/loadTab.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/noticeTab.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/noticeTab.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/WEB-INF/classes/properties/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/WEB-INF/classes/properties/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/WEB-INF/classes/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/WEB-INF/classes/spring/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/css/supersized.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/img/backgrounds/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/img/backgrounds/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/img/backgrounds/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/img/backgrounds/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/img/bg1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/img/lock.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/img/logo2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/img/memeber.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/img/right.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/js/jquery-1.8.2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/js/supersized-init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/login_style/js/supersized.3.2.7.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/userTab.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/userTab.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/properties/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/properties/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,65 +54,98 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="filter.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/filter.png">
-          <provider selected="true" editor-type-id="images" />
+      <file leaf-file-name="deptTab.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/deptTab.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="21" column="43" lean-forward="true" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="group_add.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/group_add.png">
-          <provider selected="true" editor-type-id="images" />
+      <file leaf-file-name="empTab.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/empTab.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="507">
+              <caret line="30" column="70" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="help.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/help.png">
-          <provider selected="true" editor-type-id="images" />
+      <file leaf-file-name="userTab.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/userTab.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="23" column="71" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="large_chart.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/large_chart.png">
-          <provider selected="true" editor-type-id="images" />
+      <file leaf-file-name="jobTab.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jobTab.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="47" column="46" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+            <state relative-caret-position="130">
+              <caret line="41" column="27" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="27" />
               <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="druid.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/properties/druid.properties">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="db.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/properties/db.properties">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="icon.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icon.css">
+      <file leaf-file-name="loadTab.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/loadTab.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="103" column="1" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="18" />
+            <state relative-caret-position="86">
+              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="large_shapes.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/large_shapes.png">
-          <provider selected="true" editor-type-id="images" />
+      <file leaf-file-name="noticeShow.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/noticeShow.jsp">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="large_smartart.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/large_smartart.png">
-          <provider selected="true" editor-type-id="images" />
+      <file leaf-file-name="noticeTab.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/noticeTab.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="41" column="120" lean-forward="true" selection-start-line="41" selection-start-column="120" selection-end-line="41" selection-end-column="120" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeptInfMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/DeptInfMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-375">
+              <folding>
+                <element signature="n#where#0;n#sql#0;n#mapper#0;n#!!top" />
+                <element signature="n#sql#1;n#mapper#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addNotice.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/addNotice.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="58" column="54" selection-start-line="58" selection-start-column="54" selection-end-line="58" selection-end-column="54" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -142,14 +161,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>name</find>
-      <find>findAllJobInfPaging</find>
-      <find>editStatus</find>
-      <find>部门</find>
-      <find>Base_Column_List</find>
-      <find>EmpDeptJob_Column_List</find>
-      <find>NAME</find>
-      <find>openEdit</find>
       <find>openAdd</find>
       <find>clearSearch</find>
       <find>remove</find>
@@ -172,6 +183,14 @@
       <find>large_clipart.png</find>
       <find>add</find>
       <find>large_shapes.png</find>
+      <find>/kindeditor-4.1.10/php/upload_json.php</find>
+      <find>deptId</find>
+      <find>easyui-validatebox</find>
+      <find>save</find>
+      <find>parseJSON</find>
+      <find>emp-datagrid-4</find>
+      <find>&lt;c:if test=</find>
+      <find>&lt;c:if test=&quot;${</find>
     </findStrings>
     <replaceStrings>
       <replace>user</replace>
@@ -183,32 +202,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/DeptController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/DeptInfService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/DeptInfServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/JobController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/JobInfService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/JobInfServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/JobInfMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/DeptInfMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/EmployeeInf.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/EmpInfController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/EmployeeInfExample.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/jsp/demo.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/common.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/LoadUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/LoadInfExample.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/LoadInf.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/UserInfServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/LoadInfMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/interceptor/MyHandlerInterceptor.java" />
         <option value="$PROJECT_DIR$/target/HrmProject_SSM_Maven/views/loadTab.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/LoadService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/LoadServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/views/loadTab.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UploadController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/NoticeUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/EmpInfServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/NoticeInfExample.java" />
@@ -218,22 +221,38 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/NoticeInfMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/NoticeInfMapper.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/noticeShow.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/views/addNotice.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/NoticeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/NoticeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/NoticeServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/views/noticeTab.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/domain/NoticeInf.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/tologin.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/util/RandomValidateCode.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/login_style/layui.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/userTab.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/properties/db.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/interceptor/MyHandlerInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/jsp/file_manager_json.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/jsp/upload_json.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/JobController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/DeptController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/NoticeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UploadController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UserInfController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/addNotice.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/icon.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/EmpInfController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/UserInfServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/UserInfService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/empTab.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/deptTab.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jobTab.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/userTab.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jobTab.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/deptTab.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/loadTab.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/noticeTab.jsp" />
       </list>
     </option>
   </component>
@@ -246,9 +265,9 @@
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
-    <option name="CUSTOM_FILTER" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
+    <option name="CUSTOM_FILTER" value="maxupload" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -263,6 +282,27 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="HrmProject_SSM_Maven Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="HrmProject_SSM_Maven Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="HrmProject_SSM_Maven Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="MavenRunner">
     <option name="jreName" value="#JAVA_HOME" />
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
@@ -271,10 +311,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1765" />
-    <option name="y" value="122" />
-    <option name="width" value="1920" />
-    <option name="height" value="1030" />
+    <option name="x" value="-10" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -284,6 +323,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -314,7 +354,66 @@
               <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hrm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hrm" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hrm" type="462c0819:PsiDirectoryNode" />
+              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hrm" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="properties" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
@@ -323,13 +422,63 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="jquery-easyui-1.3.3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="jquery-easyui-1.3.3" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
+              <item name="upload" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -344,17 +493,17 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\idea_workspacW\HrmProject_SSM_Maven\src\main\webapp" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.gjc.hrm.controller" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\idea_workspacW\HrmProject_SSM_Maven\src\main\webapp\WEB-INF\lib" />
       <recent name="D:\idea_workspacW\HrmProject_SSM_Maven\src\main\webapp\login_style" />
       <recent name="D:\idea_workspacW\HrmProject_SSM_Maven\src\main\webapp\images" />
       <recent name="D:\idea_workspacW\HrmProject_SSM_Maven\src\main\java\com\gjc\hrm\mapper" />
       <recent name="D:\idea_workspacW\HrmProject_SSM_Maven\src\main\java\com\gjc\hrm\domain" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gjc.hrm.controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\idea_workspacW\HrmProject_SSM_Maven\src\main\webapp" />
     </key>
   </component>
@@ -503,7 +652,9 @@
       <workItem from="1561524525682" duration="9201000" />
       <workItem from="1561595578419" duration="25182000" />
       <workItem from="1561632863962" duration="12456000" />
-      <workItem from="1561684957270" duration="15586000" />
+      <workItem from="1561684957270" duration="15964000" />
+      <workItem from="1561717292025" duration="6086000" />
+      <workItem from="1561793556020" duration="24699000" />
     </task>
     <task id="LOCAL-00001" summary="完善了部门、职位、用户的增删改查">
       <created>1561221720675</created>
@@ -526,19 +677,27 @@
       <option name="project" value="LOCAL" />
       <updated>1561652039279</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="完成登录功能和验证码">
+      <created>1561715247563</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1561715247563</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153680000" />
+    <option name="totallyTimeSpent" value="184843000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1913" y="-5" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32952926" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.3297587" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="2" />
@@ -546,7 +705,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4336662" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.49928674" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32952926" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
@@ -554,11 +713,12 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32952926" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23537803" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33095577" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21313673" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15616623" />
       <window_info id="Web" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32952926" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -566,16 +726,14 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32952926" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32952926" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info id="Image Layers" order="3" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -583,6 +741,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32952926" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -591,7 +750,6 @@
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32952926" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33176944" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -600,6 +758,7 @@
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32952926" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.43081313" />
     </layout-to-restore>
   </component>
@@ -613,14 +772,15 @@
     <MESSAGE value="完善了部门、职位、用户的增删改查" />
     <MESSAGE value="完善用户的模糊搜索功能" />
     <MESSAGE value="完成文件上传下载和公告操作等功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成文件上传下载和公告操作等功能" />
+    <MESSAGE value="完成登录功能和验证码" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成登录功能和验证码" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/JobController.java</url>
-          <line>39</line>
+          <line>42</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -638,19 +798,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UserInfController.java</url>
-          <line>64</line>
+          <line>67</line>
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/EmpInfController.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/EmpInfController.java</url>
-          <line>73</line>
+          <line>87</line>
           <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
@@ -668,13 +822,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UploadController.java</url>
-          <line>132</line>
+          <line>129</line>
           <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UploadController.java</url>
-          <line>100</line>
+          <line>101</line>
           <properties />
           <option name="timeStamp" value="37" />
         </line-breakpoint>
@@ -721,16 +875,40 @@
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/LoginController.java</url>
-          <line>40</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UploadController.java</url>
+          <line>67</line>
           <properties />
-          <option name="timeStamp" value="48" />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/jsp/file_manager_json.jsp</url>
+          <line>12</line>
+          <properties />
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/jsp/upload_json.jsp</url>
+          <line>11</line>
+          <properties />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/EmpInfController.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/index.jsp</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/LoginController.java</url>
-          <line>42</line>
+          <line>101</line>
           <properties />
-          <option name="timeStamp" value="49" />
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/JobController.java</url>
@@ -741,173 +919,371 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="50" />
+      <option name="time" value="58" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/default/images/datagrid_icons.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/default/images/calendar_arrows.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/default/images/accordion_arrows.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/default/images/blank.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/default/images/tagbox_icons.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/default/images/slider_handle.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/default/images/validatebox_warning.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/default/images/tree_icons.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/default/images/tabs_icons.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/gray/images/datagrid_icons.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/gray/images/combo_arrow.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/gray/images/loading.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/gray/images/spinner_arrows.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/mini_refresh.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/no.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/print.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/zoom.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/user_add.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/undo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/tip.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/search.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/reload.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/redo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/pencil.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/ok.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/more.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/mini_edit.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/mini_add.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/man.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/lock.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/large_picture.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/large_clipart.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/group.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/clear.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/cancel.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/back.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/blank.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/cut.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/edit_add.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/edit_remove.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/filesave.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/filter.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/group_add.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/help.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/large_smartart.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/large_shapes.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icons/large_chart.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icon.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/EmpInfController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="103" column="1" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="18" />
+        <state relative-caret-position="250">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/DeptController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1225">
+          <caret line="49" column="56" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/NoticeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="41" column="32" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2400">
+          <caret line="119" selection-start-line="119" selection-end-line="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/loadTab.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1175">
+          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1850">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/properties/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5125">
+          <caret line="205" column="46" selection-start-line="205" selection-start-column="46" selection-end-line="205" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
+        <state relative-caret-position="1175">
           <caret line="47" column="46" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icon.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2575">
+          <caret line="103" column="1" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/properties/druid.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="15" lean-forward="true" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/easyui/themes/icon.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2575">
+          <caret line="103" column="1" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/properties/druid.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/properties/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-98">
+          <caret line="192" column="45" lean-forward="true" selection-start-line="192" selection-start-column="45" selection-end-line="192" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/interceptor/MyHandlerInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1418">
+          <caret line="59" column="45" selection-start-line="59" selection-start-column="45" selection-end-line="59" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/kindeditor-all-min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/kindeditor-min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/jsp/file_manager_json.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#653#661#0#JAVA" expanded="true" />
+            <element signature="e#2029#2040#0#JAVA" expanded="true" />
+            <element signature="e#2186#2202#0#JAVA" expanded="true" />
+            <element signature="e#2700#2708#0#JAVA" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/kindeditor-4.1.10/jsp/upload_json.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="110" column="26" lean-forward="true" selection-start-line="110" selection-start-column="26" selection-end-line="110" selection-end-column="26" />
+          <folding>
+            <element signature="e#653#661#0#JAVA" expanded="true" />
+            <element signature="e#1965#1976#0#JAVA" expanded="true" />
+            <element signature="e#2122#2138#0#JAVA" expanded="true" />
+            <element signature="e#2636#2644#0#JAVA" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/JobController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="82" column="19" lean-forward="true" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/DeptController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/NoticeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-125">
+          <caret line="60" column="26" lean-forward="true" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-535">
+          <caret line="101" column="58" selection-start-line="101" selection-start-column="58" selection-end-line="101" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.6.RELEASE/spring-web-4.2.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/EmpInfServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/EmpInfController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/DeptInfMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/UserInfServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/UserInfService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UserInfController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="56" column="45" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jquery-easyui-1.3.3/themes/icon.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/EmployeeInfMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/JobInfMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/deptTab.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="21" column="43" lean-forward="true" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/empTab.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="30" column="70" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/userTab.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="23" column="71" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jobTab.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="41" column="27" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/properties/db.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/DeptInfMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-375">
+          <folding>
+            <element signature="n#where#0;n#sql#0;n#mapper#0;n#!!top" />
+            <element signature="n#sql#1;n#mapper#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/addNotice.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="58" column="54" selection-start-line="58" selection-start-column="54" selection-end-line="58" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/loadTab.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/noticeShow.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/properties/druid.properties">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/noticeTab.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="41" column="120" lean-forward="true" selection-start-line="41" selection-start-column="120" selection-end-line="41" selection-end-column="120" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

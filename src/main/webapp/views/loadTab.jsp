@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,10 +26,12 @@
     <!-- Begin of toolbar -->
     <div id="load-toolbar-4">
         <div class="wu-toolbar-button">
+<c:if test="${status >= 2}">
             <a href="#" class="easyui-linkbutton" iconCls="icon-add" onclick="openAddLoad()" plain="true">上传</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-edit" onclick="openEditLoad()" plain="true">修改</a>
             <a  class="easyui-linkbutton" iconCls="icon-remove" onclick="removeLoad()" plain="true" >删除</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-remove" onclick="Load()" plain="true" id="removeL">下载</a>
+</c:if>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-save" onclick="Load()" plain="true" id="removeL">下载</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-reload" onclick="reloadLoad()" plain="true">刷新</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onclick="clearSearchLoad()" plain="true">清空</a>
         </div>
@@ -67,7 +70,7 @@
             </tr>
             <tr>
                 <td>选择文件：</td>
-                <td><input type="file" name="file" width="120px"> </td>
+                <td><input type="file" name="file" width="120px" onchange="fileChange(this);"> </td>
             </tr>
         </table>
         <div ><span id="load_mes"></span></div>
@@ -140,6 +143,61 @@
         $('#searchLoadTitle').val("");
     }
     /**
+     * js上传文件大小限制
+     */
+    var isIE = /msie/i.test(navigator.userAgent) && !window.opera;
+    function fileChange(target,id) {
+        var fileSize = 0;
+        var filetypes =[".jpg",".png",".rar",".txt",".zip",".doc",".ppt",".xls",".pdf",".docx",".xlsx",".exe"];
+        var filepath = target.value;
+        var filemaxsize = 1024*100;//100M
+        if(filepath){
+            var isnext = false;
+            var fileend = filepath.substring(filepath.lastIndexOf("."));
+            if(filetypes && filetypes.length>0){
+                for(var i =0; i<filetypes.length;i++){
+                    if(filetypes[i]==fileend){
+                        isnext = true;
+                        break;
+                    }
+                }
+            }
+            if(!isnext){
+                alert("不接受此文件类型！");
+                target.value ="";
+                return false;
+            }
+        }else{
+            return false;
+        }
+        if (isIE && !target.files) {
+            var filePath = target.value;
+            var fileSystem = new ActiveXObject("Scripting.FileSystemObject");
+            if(!fileSystem.FileExists(filePath)){
+                alert("附件不存在，请重新输入！");
+                return false;
+            }
+            var file = fileSystem.GetFile (filePath);
+            fileSize = file.Size;
+        } else {
+            fileSize = target.files[0].size;
+        }
+
+        var size = fileSize / 1024;
+        if(size>filemaxsize){
+            alert("附件大小不能大于"+filemaxsize/1024+"M！");
+            target.value ="";
+            return false;
+        }
+        if(size<=0){
+            alert("附件大小不能为0M！");
+            target.value ="";
+            return false;
+        }
+    }
+
+
+    /**
      * Name 上传文件
      */
 
@@ -149,7 +207,18 @@
             onSubmit : function() {
                 return $(this).form('enableValidation').form('validate');
             },
+            beforeSend: function () {
+                $.messager.progress({
+                    title: '提示',
+                    msg: '文件上传中，请稍候……',
+                    text: ''
+                });
+            },
+            complete: function () {
+                $.messager.progress('close');
+            },
             success:function(data){
+
                 if(data == "ok"){
                     $.messager.alert('上传成功', '文件上传成功', 'info');
                     $('#load-dialog-2').dialog('close');
@@ -162,6 +231,20 @@
             }
         });
     }
+
+    /**
+     * 进度缓冲
+     */
+
+    function ajaxLoading(){
+        $("<div class=\"datagrid-mask\"></div>").css({display:"block",width:"100%",height:$(window).height()}).appendTo("body");
+        $("<div class=\"datagrid-mask-msg\"></div>").html("正在处理，请稍候。。。").appendTo("body").css({display:"block",left:($(document.body).outerWidth(true) - 190) / 2,top:($(window).height() - 45) / 2});
+    }
+    function ajaxLoadEnd(){
+        $(".datagrid-mask").remove();
+        $(".datagrid-mask-msg").remove();
+    }
+
     /**
      * Name 修改记录
      */
@@ -170,7 +253,7 @@
         $('#load-form-1').form('submit', {
             url:'${pageContext.request.contextPath}/#',
             success:function(data){
-                if(parseInt(data)){
+                if(data == "ok"){
                     $.messager.alert('信息提示','修改成功！','info');
                     $('#load-dialog-1').dialog('close');
                     reloadLoad();

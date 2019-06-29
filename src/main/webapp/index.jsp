@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/kindeditor-4.1.10/themes/default/default.css"/>
     <script charset="utf-8" src="${pageContext.request.contextPath}/kindeditor-4.1.10/kindeditor-all.js"></script>
     <script charset="utf-8" src="${pageContext.request.contextPath}/kindeditor-4.1.10/lang/zh_CN.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/xlsx@0.14.0/dist/xlsx.full.min.js"></script>
 </head>
 <body class="easyui-layout">
 <!-- begin of header -->
@@ -37,8 +39,12 @@
     <div class="easyui-accordion" data-options="border:false,fit:true">
         <div title="管理中心" data-options="iconCls:'icon-application-cascade'" style="padding:5px;">
             <ul class="easyui-tree wu-side-tree">
-                <li iconCls="icon-users"><a href="javascript:void(0)" data-icon="icon-users" data-link="userTab.jsp" iframe="0">用户管理</a></li>
-                <li iconCls="icon-group"><a href="javascript:void(0)" data-icon="icon-group" data-link="empTab.jsp" iframe="0">员工管理</a></li>
+                <c:if test="${status == 3}">
+                    <li iconCls="icon-users"><a href="javascript:void(0)" data-icon="icon-users" data-link="userTab.jsp" iframe="0">用户管理</a></li>
+                </c:if>
+                <c:if test="${status >= 2}">
+                    <li iconCls="icon-group"><a href="javascript:void(0)" data-icon="icon-group" data-link="empTab.jsp" iframe="0">员工管理</a></li>
+                </c:if>
                 <li iconCls="icon-book"><a href="javascript:void(0)" data-icon="icon-book" data-link="deptTab.jsp" iframe="0">部门管理</a></li>
                 <li iconCls="icon-large-clipart"><a href="javascript:void(0)" data-icon="icon-large-clipart" data-link="jobTab.jsp" iframe="0">职位管理</a></li>
             </ul>
@@ -51,14 +57,18 @@
         <div title="公告管理" data-options="iconCls:'icon-application-form-edit'" style="padding:5px;">
             <ul class="easyui-tree wu-side-tree">
                 <li iconCls="icon-chart-organisation"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="views/noticeTab.jsp" iframe="0">公告操作</a></li>
+        <c:if test="${status >= 2}">
                 <li iconCls="icon-add"><a href="javascript:void(0)" data-icon="icon-add" data-link="views/addNotice.jsp" iframe="0" >添加公告</a></li>
+        </c:if>
             </ul>
         </div>
+<c:if test="${status  == 3}">
         <div title="系统设置" data-options="iconCls:'icon-wrench'" style="padding:5px;">
             <ul class="easyui-tree wu-side-tree">
                 <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-cog" data-link="#" iframe="0">日志操作</a></li>
             </ul>
         </div>
+</c:if>
     </div>
 </div>
 <!-- end of sidebar -->

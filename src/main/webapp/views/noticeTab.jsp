@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java"  pageEncoding="UTF-8" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -37,8 +38,10 @@
 <div id="tb">
 
     <div>
+<c:if test="${status >= 2}">
         <a href="javascript:openArticleModifyDialog()" class="easyui-linkbutton" iconCls="icon-edit" plain="true">修改</a>
         <a href="javascript:removeNotice()" class="easyui-linkbutton" iconCls="icon-remove" plain="true">删除</a>
+</c:if>
         <a href="javascript:clearNoticeSearch()" class="easyui-linkbutton" iconCls="icon-undo" plain="true">清空</a>
         <a href="javascript:reloadNotice()" class="easyui-linkbutton" iconCls="icon-reload" plain="true">刷新</a>
     </div>
@@ -115,11 +118,6 @@
     }
 
     var url;
-    function searchArticle() {
-        $("#dg").datagrid('load', {
-            "articleTitle": $("#articleTitle").val(),
-        });
-    }
 
     /**
      * Name 删除记录

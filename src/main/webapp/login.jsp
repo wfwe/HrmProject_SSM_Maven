@@ -30,7 +30,7 @@
     </h1>
     <form action="${pageContext.request.contextPath}/login.action" method="post" onsubmit="return checkInf();">
     <div class="layui-user-icon larry-login">
-        <input type="text" placeholder="账号" class="login_txtbx" name="loginname" id="loginname"/>
+        <input type="text" placeholder="账号" class="login_txtbx" name="username" id="loginname"/>
     </div>
     <div class="layui-pwd-icon larry-login">
         <input type="password" placeholder="密码" class="login_txtbx" name="password" id="password"/>
@@ -38,13 +38,13 @@
 
     <div class="layui-val-icon larry-login">
         <div class="layui-code-box">
-            <input type="text" id="code" name="username" placeholder="验证码" maxlength="4" class="login_txtbx">
+            <input type="text" id="code" name="loginname" placeholder="验证码" maxlength="4" class="login_txtbx">
             <img  alt="点击更换验证码" class="verifyImg" id="verifyImg" onClick="javascript:this.src='${pageContext.request.contextPath}/getVerify.action?'+Math.random();">
         </div>
     </div>
     <div id="upError" style="color: red;height: 10px">${error.error}</div>
     <div class="layui-submit larry-login">
-        <input type="submit" value="立即登陆" class="submit_btn" />
+        <input type="submit" value="立即登陆" class="submit_btn" id="sub"/>
     </div>
     </form>
     <div class="layui-login-text">
@@ -63,7 +63,14 @@
             background: "#141414",
             color: "#E6E6E6"
         });
+        /*$("#sub").click(function () {
+            $.easyui.loading({ msg: "正在加载...", topMost: true });
+            window.setTimeout(function () { $.easyui.loaded(true); }, 1000);
+        });*/
     });
+
+
+
 
     function checkInf(){
         //location.href="index.html";

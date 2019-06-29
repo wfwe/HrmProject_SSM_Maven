@@ -13,7 +13,7 @@ public class MyHandlerInterceptor implements HandlerInterceptor {
     @Override
     public void afterCompletion(HttpServletRequest arg0, HttpServletResponse arg1, Object arg2, Exception arg3)
             throws Exception {
-        System.out.println("HandlerInterceptor1....afterCompletion");
+        //System.out.println("HandlerInterceptor1....afterCompletion");
     }
 
     // controller执行后但未返回视图前调用此方法
@@ -21,7 +21,7 @@ public class MyHandlerInterceptor implements HandlerInterceptor {
     @Override
     public void postHandle(HttpServletRequest arg0, HttpServletResponse arg1, Object arg2, ModelAndView arg3)
             throws Exception {
-        System.out.println("HandlerInterceptor1....postHandle");
+        //System.out.println("HandlerInterceptor1....postHandle");
     }
 
     // Controller执行前调用此方法
@@ -29,15 +29,15 @@ public class MyHandlerInterceptor implements HandlerInterceptor {
     // 这里可以加入登录校验、权限拦截等
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object arg2) throws Exception {
-       // Object userName =  request.getSession().getAttribute("userName");
-        //if (userName != null){
-        //    return true;
-       // }
-        //else{
-         //   response.sendRedirect("/toLogin.action");
-        //}
+        Object userName =  request.getSession().getAttribute("userName");
+        if (userName != null){
+            return true;
+      }
+        else{
+        response.sendRedirect("/login.jsp");
+        }
         // 设置为true，测试使用
-        return true;
+        return false;
     }
 
 }

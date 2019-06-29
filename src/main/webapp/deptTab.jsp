@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,12 +19,14 @@
 <div class="easyui-layout" data-options="fit:true">
     <!-- Begin of toolbar -->
     <div id="dept-toolbar-4">
-        <div class="wu-toolbar-button">
-            <a href="#" class="easyui-linkbutton" iconCls="icon-add" onclick="openAddDept()" plain="true">添加</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-edit" onclick="openEditDept()" plain="true">修改</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-remove" onclick="removeDept()" plain="true">删除</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-reload" onclick="reloadDept()" plain="true">刷新</a>
-        </div>
+            <div class="wu-toolbar-button">
+            <c:if test="${status  >= 2}">
+                <a href="#" class="easyui-linkbutton" iconCls="icon-add" onclick="openAddDept()" plain="true">添加</a>
+                <a href="#" class="easyui-linkbutton" iconCls="icon-edit" onclick="openEditDept()" plain="true">修改</a>
+                <a href="#" class="easyui-linkbutton" iconCls="icon-remove" onclick="removeDept()" plain="true">删除</a>
+            </c:if>
+                <a href="#" class="easyui-linkbutton" iconCls="icon-reload" onclick="reloadDept()" plain="true">刷新</a>
+            </div>
     </div>
     <!-- End of toolbar -->
     <table id="dept-datagrid-4" class="easyui-datagrid" toolbar="#dept-toolbar-4"></table>
@@ -59,7 +62,7 @@
                 return $(this).form('enableValidation').form('validate');
             },
             success:function(data){
-                if(data){
+                if(data == "ok"){
                     $.messager.alert('添加成功', '部门添加成功', 'info');
                     $('#dept-dialog-2').dialog('close');
                     $('#dept-datagrid-4').datagrid("reload");
@@ -87,7 +90,7 @@
         $('#dept-form-2').form('submit', {
             url:'${pageContext.request.contextPath}/editDeptInf.action',
             success:function(data){
-                if(data.valueOf()){
+                if(data == "ok"){
                     $.messager.alert('信息提示','修改成功！','info');
                     $('#dept-dialog-2').dialog('close');
                     $('#dept-datagrid-4').datagrid("reload");
@@ -123,7 +126,7 @@
                 $.ajax({
                     url:'${pageContext.request.contextPath}/deleteDeptInfById.action?ids='+ids,
                     success:function(data){
-                        if(data.valueOf()){
+                        if(data=="ok"){
                             $.messager.alert('信息提示',names+' 删除成功！','info');
                             $('#dept-datagrid-4').datagrid("reload");
                         }
@@ -141,7 +144,7 @@
      * Name 打开添加窗口
      */
     function openAddDept(){
-        //$('#dept-form-2').form('clear');
+        $('#dept-form-2').form('clear');
         $('#dept-dialog-2').dialog({
             closed: false,
             modal:true,

@@ -34,12 +34,20 @@ public class LoginController {
     @RequestMapping(value = "/login.action",method = RequestMethod.POST)
     public String login(HttpServletRequest request,UserInf userInf, Model model){
         Map<String,String> error = new HashMap<>();
-        if (userInf.getUsername() == null || userInf.getUsername() == ""){
+        if (userInf.getLoginname() == null || userInf.getLoginname() == ""){
             error.put("error","请输入验证码！");
             model.addAttribute("error",error);
             return "/login";
         }
+        String tmp = userInf.getLoginname();
+        userInf.setLoginname(userInf.getUsername());
+        userInf.setUsername(tmp);
         String random = (String) request.getSession().getAttribute("RANDOMVALIDATECODEKEY");
+        if (random == null || random == ""){
+            error.put("error","请输入验证码！");
+            model.addAttribute("error",error);
+            return "/login";
+        }
         if (!(random.equals(userInf.getUsername().toUpperCase()))){
             error.put("error","验证码错误");
             model.addAttribute("error",error);
@@ -49,6 +57,8 @@ public class LoginController {
         if (rst > 0){
             request.getSession().setAttribute("userName",userInf.getLoginname());
             request.getSession().setAttribute("userId",rst);
+            UserInf userInfById = userInfService.findUserInfById(rst);
+            request.getSession().setAttribute("status",userInfById.getStatus());
             return "redirect: /index.action";
         }else if (rst == -3){
             error.put("error","请输入账号！");
@@ -89,6 +99,7 @@ public class LoginController {
     public String quitLogin(HttpServletRequest request){
         request.getSession().removeAttribute("userName");
         request.getSession().removeAttribute("userId");
+        request.getSession().removeAttribute("status");
         return "login";
     }
 
