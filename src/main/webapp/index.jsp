@@ -37,28 +37,33 @@
 <!-- begin of sidebar -->
 <div class="wu-sidebar" data-options="region:'west',split:true,border:true,title:'公司人事信息管理'">
     <div class="easyui-accordion" data-options="border:false,fit:true">
+        <div title="个人中心" data-options="iconCls:'icon-folder-user'" style="padding:5px;">
+            <ul class="easyui-tree wu-side-tree">
+                    <li iconCls="icon-user"><a href="javascript:void(0)" data-icon="icon-user" data-link="views/myInf.jsp" iframe="0">个人信息</a></li>
+            </ul>
+        </div>
         <div title="管理中心" data-options="iconCls:'icon-application-cascade'" style="padding:5px;">
             <ul class="easyui-tree wu-side-tree">
                 <c:if test="${status == 3}">
-                    <li iconCls="icon-users"><a href="javascript:void(0)" data-icon="icon-users" data-link="userTab.jsp" iframe="0">用户管理</a></li>
+                    <li iconCls="icon-user"><a href="javascript:void(0)" data-icon="icon-user" data-link="userTab.jsp" iframe="0">用户管理</a></li>
                 </c:if>
                 <c:if test="${status >= 2}">
                     <li iconCls="icon-group"><a href="javascript:void(0)" data-icon="icon-group" data-link="empTab.jsp" iframe="0">员工管理</a></li>
                 </c:if>
                 <li iconCls="icon-book"><a href="javascript:void(0)" data-icon="icon-book" data-link="deptTab.jsp" iframe="0">部门管理</a></li>
-                <li iconCls="icon-large-clipart"><a href="javascript:void(0)" data-icon="icon-large-clipart" data-link="jobTab.jsp" iframe="0">职位管理</a></li>
+                <li iconCls="icon-webcam"><a href="javascript:void(0)" data-icon="icon-webcam" data-link="jobTab.jsp" iframe="0">职位管理</a></li>
             </ul>
         </div>
         <div title="文件管理" data-options="iconCls:'icon-creditcards'" style="padding:5px;">
             <ul class="easyui-tree wu-side-tree">
-                <li iconCls="icon-large-shapes"><a href="javascript:void(0)" data-icon="icon-large-shapes" data-link="views/loadTab.jsp" iframe="0">文件操作</a></li>
+                <li iconCls="icon-world-edit"><a href="javascript:void(0)" data-icon="icon-world-edit" data-link="views/loadTab.jsp" iframe="0">文件操作</a></li>
             </ul>
         </div>
         <div title="公告管理" data-options="iconCls:'icon-application-form-edit'" style="padding:5px;">
             <ul class="easyui-tree wu-side-tree">
-                <li iconCls="icon-chart-organisation"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="views/noticeTab.jsp" iframe="0">公告操作</a></li>
+                <li iconCls="icon-report-go"><a href="javascript:void(0)" data-icon="icon-report-go" data-link="views/noticeTab.jsp" iframe="0">公告操作</a></li>
         <c:if test="${status >= 2}">
-                <li iconCls="icon-add"><a href="javascript:void(0)" data-icon="icon-add" data-link="views/addNotice.jsp" iframe="0" >添加公告</a></li>
+                <li iconCls="icon-report-add"><a href="javascript:void(0)" data-icon="icon-report-add" data-link="views/addNotice.jsp" iframe="0" >添加公告</a></li>
         </c:if>
             </ul>
         </div>

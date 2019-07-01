@@ -1,5 +1,7 @@
 package com.gjc.hrm.util;
 
+import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion;
+
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -20,5 +22,11 @@ public class DateUtil {
         c.add(Calendar.DAY_OF_MONTH, 1);// +1天
         Date d = c.getTime();
         return d;
+    }
+    public static String currentDate(){
+        DateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date date= new Date();
+        String s =format.format(date);
+        return s;
     }
 }

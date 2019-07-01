@@ -3,8 +3,10 @@ package com.gjc.hrm.service.impl;
 import com.gjc.hrm.domain.EmpDeptJob;
 import com.gjc.hrm.domain.EmployeeInf;
 import com.gjc.hrm.domain.EmployeeInfExample;
+import com.gjc.hrm.domain.UserInf;
 import com.gjc.hrm.mapper.EmployeeInfMapper;
 import com.gjc.hrm.service.EmpInfService;
+import com.gjc.hrm.service.UserInfService;
 import com.gjc.hrm.util.DateUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,6 +22,9 @@ public class EmpInfServiceImpl implements EmpInfService {
 
     @Autowired
     private EmployeeInfMapper employeeInfMapper;
+
+    @Autowired
+    private UserInfService userInfService;
 
     @Override
     public int findEmpInfCount(String startTime, String endTime, String searchDept, String searchJob, String searchName) throws ParseException {
@@ -99,7 +104,17 @@ public class EmpInfServiceImpl implements EmpInfService {
     @Override
     public int addEmpInf(EmployeeInf employeeInf) {
         int rst = employeeInfMapper.insertSelective(employeeInf);
-        return rst;
+        UserInf userInf = new UserInf();
+        userInf.setUsername(employeeInf.getName());
+        userInf.setLoginname(employeeInf.getCardId());
+        //密码为员工号的后6位
+        userInf.setPassword(employeeInf.getCardId().substring(employeeInf.getCardId().length()-6,employeeInf.getCardId().length()));
+        userInf.setStatus(1);
+        int r = userInfService.addUserInf(userInf);
+        if (r == 1 && rst == 1)
+            return rst;
+        else
+            return 0;
     }
 
     @Override
@@ -126,5 +141,31 @@ public class EmpInfServiceImpl implements EmpInfService {
             return 1;
         else
             return 0;
+    }
+
+    @Override
+    public List<String> findEmpEmail() {
+        List<String> emailList = employeeInfMapper.selectEmail();
+        return emailList;
+    }
+
+    @Override
+    public EmpDeptJob findEmpInfByUserName(String loginName) {
+        EmployeeInfExample employeeInfExample = new EmployeeInfExample();
+        EmployeeInfExample.Criteria criteria = employeeInfExample.createCriteria();
+        criteria.andCardIdEqualTo(loginName);
+        List<EmpDeptJob> empDeptJob = employeeInfMapper.selectByExample(employeeInfExample);
+        if (empDeptJob.size()>0){
+            return empDeptJob.get(0);
+        }else {
+            return null;
+        }
+
+    }
+
+    @Override
+    public List<String> findManagerEmail(EmployeeInfExample employeeInfExample) {
+        List<String> rst = employeeInfMapper.findManagerEmail(employeeInfExample);
+        return rst;
     }
 }

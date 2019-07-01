@@ -29,4 +29,8 @@ public interface EmployeeInfMapper {
     int updateByPrimaryKeySelective(EmployeeInf record);
 
     int updateByPrimaryKey(EmployeeInf record);
+
+    List<String> selectEmail();
+
+    List<String> findManagerEmail(EmployeeInfExample employeeInfExample);
 }

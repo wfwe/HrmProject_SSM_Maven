@@ -28,4 +28,6 @@ public interface UserInfMapper {
     int updateByPrimaryKeySelective(UserInf record);
 
     int updateByPrimaryKey(UserInf record);
+
+    List<String> selectMannger();
 }

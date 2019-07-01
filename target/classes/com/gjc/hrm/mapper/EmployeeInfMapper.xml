@@ -167,6 +167,19 @@
     from employee_inf e, dept_inf d, job_inf j
     where  e.ID = #{id,jdbcType=INTEGER} and e.DEPT_ID = d.ID and e.JOB_ID = j.ID
   </select>
+  <select id="selectEmail" resultType="java.lang.String">
+    select email from employee_inf;
+  </select>
+  <select id="findManagerEmail" resultType="java.lang.String" parameterType="com.gjc.hrm.domain.EmployeeInfExample" >
+    select email
+    from employee_inf
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from employee_inf
     where ID = #{id,jdbcType=INTEGER}

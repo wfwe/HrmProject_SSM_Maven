@@ -150,4 +150,31 @@ public class UserInfServiceImpl implements UserInfService {
         else
             return 0;
     }
+
+    @Override
+    public int resetUserPasswordById(int[] ids) {
+        Boolean rst =false;
+        for (int i=0; i<ids.length;i++){
+            UserInf userInf = userInfMapper.selectByPrimaryKey(ids[i]);
+            userInf.setPassword(userInf.getLoginname().substring(userInf.getLoginname().length()-6,userInf.getLoginname().length()));
+            userInf.setLoginname(null);
+            userInf.setStatus(null);
+            userInf.setUsername(null);
+            userInf.setCreatedate(null);
+            int r = userInfMapper.updateByPrimaryKeySelective(userInf);
+            if (r == 1){
+                rst = true;
+            }
+        }
+        if (rst)
+            return 1;
+        else
+            return 0;
+    }
+
+    @Override
+    public List<String> findUserIsMannger() {
+        List<String> rst = userInfMapper.selectMannger();
+        return rst;
+    }
 }

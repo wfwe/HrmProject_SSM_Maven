@@ -87,4 +87,18 @@ public class UserInfController {
         else
             return "fail";
     }
+
+    @RequestMapping("/resetUserPasswordById.action")
+    @ResponseBody
+    public String resetUserPasswordById(int[] ids){
+        if (ids.length == 0){
+            return "lack";
+        }
+        int rst = userInfService.resetUserPasswordById(ids);
+        if (rst == 1){
+            return "ok";
+        }else {
+            return "fail";
+        }
+    }
 }

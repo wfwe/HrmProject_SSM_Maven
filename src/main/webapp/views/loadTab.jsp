@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -61,10 +62,6 @@
                 <td>下载权限:</td>
                 <td>
                     <select class="easyui-combobox" panelHeight="auto" style="width:100px" id="canLoadUser" name="canLoadUser">
-                        <option value="">选择权限</option>
-                        <option value="7">公司全体</option>
-                        <option value="6">所有管理员</option>
-                        <option value="4">仅超级管理员</option>
                     </select>
                 </td>
             </tr>
@@ -85,21 +82,24 @@
     <form id="load-form-1" method="post" class="easyui-form" >
         <table cellpadding="10">
             <tr>
-                <td>标题:</td>
-                <td><input class="easyui-textbox" type="text" name="name" data-options="required:true"></td>
+                <<input type="hidden" name="id">
             </tr>
             <tr>
-                <td>上传文件:</td>
-                <td><input class="easyui-numberbox" type="text" name="tel" data-options="required:true,validType:'phoneRex'"></td>
+                <td>标题:</td>
+                <td><input class="easyui-textbox" type="text" name="loadTitle" data-options="required:true"></td>
             </tr>
             <tr>
                 <td>备注:</td>
-                <td><input class="easyui-textbox" type="text" name="address" data-options="required:true"></td>
+                <td><input class="easyui-textbox" type="text" name="loadRemark" data-options="required:true"></td>
             </tr>
             <tr>
                 <td>下载权限:</td>
                 <td>
-                    <input class="easyui-combobox" name="deptId" data-options="valueField:'id',textField:'name',url:'${pageContext.request.contextPath}/#'">
+                    <select class="easyui-combobox" panelHeight="auto" style="width:100px" id="changeCanLoadUser" name="canLoadUser">
+                        <option value="7">公司全体</option>
+                        <option value="6">所有管理员</option>
+                        <option value="4">仅超级管理员</option>
+                    </select>
                 </td>
             </tr>
         </table>
@@ -251,7 +251,7 @@
     function editLoad(){
 
         $('#load-form-1').form('submit', {
-            url:'${pageContext.request.contextPath}/#',
+            url:'${pageContext.request.contextPath}/file/edit',
             success:function(data){
                 if(data == "ok"){
                     $.messager.alert('信息提示','修改成功！','info');
@@ -334,6 +334,14 @@
                 }
             }]
         });
+        var d = [ {'text' : '公司全体', 'value' : '7'},
+            {'text' : '所有管理员', 'value' : '6'},
+            {'text' : '仅超级管理员', 'value' : '4'},]
+        $('#canLoadUser').combobox({ textField : 'text', valueField : 'value', panelHeight : 'auto', data : d})
+        data = $("#canLoadUser").combobox("getData");
+        if (data && data.length > 0) {
+            $("#canLoadUser").combobox("setValue", data[0].value);
+        }
     }
 
     /**
@@ -342,7 +350,6 @@
     function openEditLoad(){
         //$('#user-form-2').form('clear');
         var item = $('#load-datagrid-4').datagrid('getSelected');
-        alert(item.id);return;
         if (item == null){
             alert("请选择要更新信息的文件");return;
         }
@@ -363,14 +370,13 @@
             }]
         });
         $.ajax({
-            url:'${pageContext.request.contextPath}/#?id='+item.id,
+            url:'${pageContext.request.contextPath}/file/find/'+item.id,
             success:function(data){
                 if(data != null){
                     //绑定值
                     var obj = jQuery.parseJSON(data);
                     $('#load-form-1').form('load', obj)
-                    //$('#deptName').combobox("setValue",parseInt(obj.deptId));
-                    // $('#jobName').combobox('setValue',parseInt(obj.jobId))
+                    $('#changeCanLoadUser').combobox("setValue",parseInt(obj.canLoadUser));
                 }
                 else{
                     $('#load-dialog-1').dialog('close');

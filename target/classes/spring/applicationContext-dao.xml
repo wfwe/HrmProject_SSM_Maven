@@ -8,7 +8,10 @@
    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
    http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
 
+
     <!-- 加载配置文件 -->
+    <!--邮件配置-->
+  <!--  <context:property-placeholder location="classpath:properties/mail.properties" ignore-unresolvable="true"/>-->
     <context:property-placeholder location="classpath:properties/*.properties" />
     <!-- 数据库连接池 -->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
@@ -29,4 +32,18 @@
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.gjc.hrm.mapper" /><!-- 具体dao层包的位置在哪，视你新建的dao层java包而定 -->
     </bean>
+<!--
+    &lt;!&ndash;配置邮件接口&ndash;&gt;
+    <bean id="javaMailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="host" value="${mail.smtp.host}"/>
+        <property name="username" value="${mail.smtp.username}"/>
+        <property name="password" value="${mail.smtp.password}"/>
+        <property name="defaultEncoding" value="${mail.smtp.defaultEncoding}"/>
+        <property name="javaMailProperties">
+            <props>
+                <prop key="mail.smtp.auth">${mail.smtp.auth}</prop>
+                <prop key="mail.smtp.timeout">${mail.smtp.timeout}</prop>
+            </props>
+        </property>
+    </bean>-->
 </beans>

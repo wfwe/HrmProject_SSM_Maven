@@ -95,6 +95,9 @@
     from user_inf
     where ID = #{id,jdbcType=INTEGER}
   </select>
+  <select id="selectMannger" resultType="java.lang.String">
+    select loginname from user_inf where STATUS in (2,3)
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from user_inf
     where ID = #{id,jdbcType=INTEGER}

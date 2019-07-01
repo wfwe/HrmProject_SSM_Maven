@@ -104,20 +104,14 @@ public class LoadServiceImpl implements LoadService {
     }
 
     @Override
-    public int deleteLoadById(Integer[] ids) {
-        Boolean rst =false;
-        for (int i=0; i<ids.length;i++){
-            LoadInf loadInf = findLoadById(ids[i]);
-            File file = new File(loadInf.getLoadPath());
-            if (file.exists()){
-                file.delete();
-            }
-            int r = loadInfMapper.deleteByPrimaryKey(ids[i]);
-            if (r == 1){
-                rst = true;
-            }
+    public int deleteLoadById(String id) {
+        LoadInf loadInf = findLoadById(Integer.valueOf(id));
+        File file = new File(loadInf.getLoadPath());
+        if (file.exists()){
+            file.delete();
         }
-        if (rst)
+        int rst = loadInfMapper.deleteByPrimaryKey(Integer.valueOf(id));
+        if (rst == 1)
             return 1;
         else
             return 0;
@@ -126,5 +120,17 @@ public class LoadServiceImpl implements LoadService {
     @Override
     public LoadInf findLoadById(Integer id) {
         return loadInfMapper.selectByPrimaryKey(id);
+    }
+
+    @Override
+    public int update(LoadInf loadInf) {
+        int r = loadInfMapper.updateByPrimaryKeySelective(loadInf);
+        return r;
+    }
+
+    @Override
+    public LoadInf find(int id) {
+        LoadInf loadInf = loadInfMapper.selectByPrimaryKey(id);
+        return loadInf;
     }
 }

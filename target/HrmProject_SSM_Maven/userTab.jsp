@@ -22,8 +22,9 @@
             <a href="#" class="easyui-linkbutton" iconCls="icon-add" onclick="openAdd()" plain="true">添加</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-edit" onclick="openEdit()" plain="true">修改</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-remove" onclick="remove()" plain="true">删除</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-redo" onclick="resetPassword()" plain="true">重置密码</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-reload" onclick="toSearch()" plain="true">刷新</a>
-            <a href="#" class="easyui-linkbutton" iconCls="icon-undo" onclick="clearSearch()" plain="true">清空</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onclick="clearSearch()" plain="true">清空</a>
         </div>
         <div class="wu-toolbar-search">
             <label>起始时间：</label><input id="startTime" name="startTime" class="easyui-datebox" style="width:100px">
@@ -123,6 +124,17 @@
         //alert(searchName);
     }
 
+    //完成两个密码效验
+    $.extend($.fn.validatebox.defaults.rules, {
+        /*必须和某个字段相等*/
+        equalTo : {
+            validator : function(value, param) {
+                return $(param[0]).val() == value;
+            },
+            message : '两次密码不一致'
+        }
+    });
+
     /**
      * 清空搜索框
      */
@@ -145,7 +157,7 @@
                 return $(this).form('enableValidation').form('validate');
             },
             success:function(data){
-                if(data){
+                if(data == "ok"){
                     $.messager.alert('创建成功', '用户创建成功', 'info');
                     $('#user-dialog-2').dialog('close');
                     reload();
@@ -166,7 +178,7 @@
         $('#user-form-1').form('submit', {
             url:'${pageContext.request.contextPath}/editUserInf.action',
             success:function(data){
-                if(parseInt(data)){
+                if(data == "ok"){
                     $.messager.alert('信息提示','修改成功！','info');
                     $('#user-dialog-1').dialog('close');
                     reload();
@@ -178,6 +190,43 @@
             }
         });
     }
+    /**
+     *重置密码
+     */
+    function resetPassword(){
+        var items = $('#user-datagrid-4').datagrid('getSelections');
+        if (items.length <= 0){
+            alert("请选择要重置密码的用户");
+            return;
+        }
+        $.messager.confirm('信息提示','确定要重置密码？', function(result){
+            if(result){
+                var ids = [];
+                var names = [];
+                $(items).each(function(){
+                    ids.push(this.id);
+                });
+                $(items).each(function () {
+                    names.push(this.username);
+                })
+                //alert(ids);return;
+                $.ajax({
+                    url:'${pageContext.request.contextPath}/resetUserPasswordById.action?ids='+ids,
+                    success:function(data){
+                        if(data == "ok"){
+                            $.messager.alert('信息提示',names+' 密码重置成功！','info');
+                            reload();
+                        }
+                        else
+                        {
+                            $.messager.alert('信息提示','密码重置失败！','info');
+                        }
+                    }
+                });
+            }
+        });
+    }
+
 
     /**
      * Name 删除记录
@@ -202,7 +251,7 @@
                 $.ajax({
                     url:'${pageContext.request.contextPath}/deleteUserInfById.action?ids='+ids,
                     success:function(data){
-                        if(parseInt(data) == 1){
+                        if(data == "ok"){
                             $.messager.alert('信息提示',names+' 删除成功！','info');
                             reload();
                         }

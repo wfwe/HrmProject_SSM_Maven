@@ -40,5 +40,9 @@
         </mvc:interceptor>
     </mvc:interceptors>
 
+    <!-- 配置全局异常处理器 -->
+    <bean id="customHandleException" 	class="com.gjc.hrm.controller.exception.CustomHandleException"/>
+
+
 
 </beans>

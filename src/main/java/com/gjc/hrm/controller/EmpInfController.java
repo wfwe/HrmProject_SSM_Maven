@@ -94,4 +94,16 @@ public class EmpInfController {
         else
             return "fail";
     }
+
+    @RequestMapping(value = "/findEmpInfByUserName.action",produces="text/html;charset=UTF-8")
+    @ResponseBody()
+    public String findEmpInfByUserName(String loginName){
+        //判断loginName
+        EmpDeptJob empDeptJob = empInfService.findEmpInfByUserName(loginName);
+        String rst=JSONObject.toJSON(empDeptJob).toString();
+        if (rst == "" || rst == null)
+            return "fail";
+        else
+            return rst;
+    }
 }

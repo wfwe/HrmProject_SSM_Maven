@@ -19,9 +19,17 @@
 <div id="dl" class="easyui-layout" align="center">
     <form id="fm" method="post" class="easyui-form" >
         <table>
-            <tr align="center">
-                <td><label>标题：</label>
+            <tr  align="center">
+                <td><label>主题：</label>
                 <input type="text" id="title" name="noticeTitle" class="easyui-validatebox" required="true" style="width: 200px"/></td>
+                <td>
+                    <label>邮件通知：</label>
+                    <select class="easyui-combobox" panelHeight="auto" style="width:100px" id="emailNotice" name="noticePeople">
+                        <option value="1">公司全体</option>
+                        <option value="2">仅管理员</option>
+                        <option value="0">否</option>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <td>
@@ -33,8 +41,7 @@
 </div>
 
 <div id="dlg-buttons" align="center">
-    <a href="javascript:saveArt()" class="easyui-linkbutton"
-       iconCls="icon-ok" id="save">保存</a> <a href="javascript:reset()" class="easyui-linkbutton" iconCls="icon-cancel">清空</a>
+    <a href="javascript:saveArt()" class="easyui-linkbutton" iconCls="icon-ok" id="save">发布</a> <a href="javascript:reset()" class="easyui-linkbutton" iconCls="icon-cancel">清空</a>
 </div>
 
 
@@ -77,7 +84,7 @@
 
                 width : "100%", //编辑器的宽度为
 
-                height : "500px", //编辑器的高度为100px
+                height : "480px", //编辑器的高度为100px
 
                 filterMode : false, //不会过滤HTML代码
 

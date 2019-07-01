@@ -30,10 +30,10 @@ import java.util.UUID;
 public class UploadController {
 
     @Autowired
-    LoadService loadService;
+    private LoadService loadService;
 
     @Autowired
-    UserInfService userInfService;
+    private UserInfService userInfService;
 
     @RequestMapping("/findLoadPaging.action")
     @ResponseBody
@@ -126,13 +126,37 @@ public class UploadController {
 
     @RequestMapping("/delete")
     @ResponseBody
-    public String delete(Integer[] ids){
-        int rst = loadService.deleteLoadById(ids);
+    public String delete(String ids){
+        String[] arr = ids.split(",");
+        Boolean b = false;
+        for (String i:arr) {
+            int rst = loadService.deleteLoadById(i);
+            if (rst == 1)
+                b = true;
+        }
+        if (b){
+            return "ok";
+        }else {
+            return "fail";
+        }
+    }
+
+    @RequestMapping("/edit")
+    @ResponseBody
+    public String edit(LoadInf loadInf){
+        int rst = loadService.update(loadInf);
         if (rst == 1){
             return "ok";
         }else {
             return "fail";
         }
+    }
+
+    @RequestMapping(value = "/find/{id}" ,produces="text/html;charset=UTF-8")
+    @ResponseBody
+    public String find(@PathVariable int id){
+        LoadInf loadInf = loadService.find(id);
+        return JSONObject.toJSON(loadInf).toString();
     }
 
 

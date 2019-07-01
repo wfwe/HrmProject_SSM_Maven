@@ -10,6 +10,16 @@
     background: url('icons/pencil.png') no-repeat center center;
 }
 
+.icon-u{
+    background: url("/usericons/user.png") no-repeat center center;
+}
+.icon-o{
+    background: url("/usericons/order.png") no-repeat center center;
+}
+.icon-job{
+    background: url("/usericons/khgcfx.png") no-repeat center center;
+}
+
 .icon-remove {
     background: url('icons/edit_remove.png') no-repeat center center;
 }

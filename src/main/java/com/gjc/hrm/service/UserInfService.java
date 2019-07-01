@@ -20,4 +20,8 @@ public interface UserInfService {
     int editUserInf(UserInf userInf);
 
     int deleteUserInfById(int[] ids);
+
+    int resetUserPasswordById(int[] ids);
+
+    List<String> findUserIsMannger();
 }

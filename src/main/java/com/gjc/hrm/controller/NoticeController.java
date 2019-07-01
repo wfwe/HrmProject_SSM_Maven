@@ -12,8 +12,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.text.ParseException;
 import java.util.HashMap;
 import java.util.List;
@@ -24,11 +26,11 @@ import java.util.Map;
 public class NoticeController {
 
     @Autowired
-    NoticeService noticeService;
+    private NoticeService noticeService;
 
     @RequestMapping("/add.action")
     @ResponseBody
-    public String add(HttpServletRequest request,NoticeInf noticeInf){
+    public String add(HttpServletRequest request,NoticeInf noticeInf) throws IOException, MessagingException {
         int userId = (int) request.getSession().getAttribute("userId");
         noticeInf.setUserId(userId);
         int rst = noticeService.addNotice(noticeInf);

@@ -1,6 +1,7 @@
 package com.gjc.hrm.controller;
 
 
+import com.gjc.hrm.controller.exception.MyException;
 import com.gjc.hrm.domain.UserInf;
 
 import com.gjc.hrm.mapper.UserInfMapper;
@@ -59,6 +60,7 @@ public class LoginController {
             request.getSession().setAttribute("userId",rst);
             UserInf userInfById = userInfService.findUserInfById(rst);
             request.getSession().setAttribute("status",userInfById.getStatus());
+            request.getSession().setAttribute("realName",userInf.getUsername());
             return "redirect: /index.action";
         }else if (rst == -3){
             error.put("error","请输入账号！");
@@ -96,10 +98,12 @@ public class LoginController {
     }
 
     @RequestMapping("quitLogin.action")
-    public String quitLogin(HttpServletRequest request){
+    public String quitLogin(HttpServletRequest request) {
+        int i =1/0;
         request.getSession().removeAttribute("userName");
         request.getSession().removeAttribute("userId");
         request.getSession().removeAttribute("status");
+        request.getSession().removeAttribute("realName");
         return "login";
     }
 

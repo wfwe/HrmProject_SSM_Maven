@@ -22,6 +22,7 @@
             <a href="#" class="easyui-linkbutton" iconCls="icon-add" onclick="openAdd()" plain="true">添加</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-edit" onclick="openEdit()" plain="true">修改</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-remove" onclick="remove()" plain="true">删除</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-redo" onclick="resetPassword()" plain="true">重置密码</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-reload" onclick="toSearch()" plain="true">刷新</a>
             <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onclick="clearSearch()" plain="true">清空</a>
         </div>
@@ -189,6 +190,43 @@
             }
         });
     }
+    /**
+     *重置密码
+     */
+    function resetPassword(){
+        var items = $('#user-datagrid-4').datagrid('getSelections');
+        if (items.length <= 0){
+            alert("请选择要重置密码的用户");
+            return;
+        }
+        $.messager.confirm('信息提示','确定要重置密码？', function(result){
+            if(result){
+                var ids = [];
+                var names = [];
+                $(items).each(function(){
+                    ids.push(this.id);
+                });
+                $(items).each(function () {
+                    names.push(this.username);
+                })
+                //alert(ids);return;
+                $.ajax({
+                    url:'${pageContext.request.contextPath}/resetUserPasswordById.action?ids='+ids,
+                    success:function(data){
+                        if(data == "ok"){
+                            $.messager.alert('信息提示',names+' 密码重置成功！','info');
+                            reload();
+                        }
+                        else
+                        {
+                            $.messager.alert('信息提示','密码重置失败！','info');
+                        }
+                    }
+                });
+            }
+        });
+    }
+
 
     /**
      * Name 删除记录

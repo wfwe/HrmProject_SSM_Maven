@@ -13,7 +13,11 @@ public interface LoadService {
 
     int findLoadCount(String startTime, String endTime, String searchLoadTitle,int status) throws ParseException;
 
-    int deleteLoadById(Integer[] id);
+    int deleteLoadById(String id);
 
     LoadInf findLoadById(Integer id);
+
+    int update(LoadInf loadInf);
+
+    LoadInf find(int id);
 }
