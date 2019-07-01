@@ -11,6 +11,6 @@
     <title>欢迎登录</title>
 </head>
 <body>
-    <h1>欢迎登录</h1>
+    <div align="center" style="padding-top: 30px"><h1>欢迎使用GavinHrm管理系统</h1></div>
 </body>
 </html>

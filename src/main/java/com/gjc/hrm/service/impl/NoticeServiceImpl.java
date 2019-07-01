@@ -74,7 +74,7 @@ public class NoticeServiceImpl implements NoticeService {
     }
 
     @Override
-    public List<NoticeUser> findNoticePaging(int startIndex, int pageSize, String startTime, String endTime, String noticeTitle) throws ParseException {
+    public List<NoticeUser> findNoticePaging(int status,int startIndex, int pageSize, String startTime, String endTime, String noticeTitle) throws ParseException {
         DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
         Date startDate = null;
         Date endDate = null;
@@ -82,6 +82,9 @@ public class NoticeServiceImpl implements NoticeService {
         noticeInfExample.setOffset(startIndex);
         noticeInfExample.setLimit(pageSize);
         NoticeInfExample.Criteria criteria = noticeInfExample.createCriteria();
+        if (status == 1){
+            criteria.andNoticePeopleBetween(0,1);
+        }
         if (!(noticeTitle == null || noticeTitle == "")){
             criteria.andNoticeTitleLike("%"+noticeTitle+"%");
         }
@@ -105,12 +108,15 @@ public class NoticeServiceImpl implements NoticeService {
     }
 
     @Override
-    public int findNoticeCount(String startTime, String endTime, String noticeTitle) throws ParseException {
+    public int findNoticeCount(int status,String startTime, String endTime, String noticeTitle) throws ParseException {
         DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
         Date startDate = null;
         Date endDate = null;
         NoticeInfExample noticeInfExample = new NoticeInfExample();
         NoticeInfExample.Criteria criteria = noticeInfExample.createCriteria();
+        if (status == 1){
+            criteria.andNoticePeopleBetween(0,1);
+        }
         if (!(noticeTitle == null || noticeTitle == "")){
             criteria.andNoticeTitleLike("%"+noticeTitle+"%");
         }

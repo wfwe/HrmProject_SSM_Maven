@@ -17,12 +17,13 @@
                 <td><input type="hidden" name="id" id="id"></td>
             </tr>
             <tr>
-                <td>姓名:</td>
-                <td><input class="easyui-validatebox easyui-textbox" type="text" name="name" data-options="required:true"></td>
-                <td>卡号:</td>
-                <td><input class="easyui-validatebox easyui-numberbox" type="text" name="cardId" data-options="required:true,validType:'length[6,12]'"></td>
-                <td>邮政编码:</td>
-                <td><input class="easyui-numberbox" type="text" name="postCode" ></td>
+                <td >姓名:</td>
+                <td><span id="pName"></span> </td>
+
+                <td>员工号:</td>
+                <td>
+                    <span id="pCardId"></span>
+                </td>
             </tr>
             <tr>
                 <td>电话:</td>
@@ -77,16 +78,18 @@
             <tr>
                 <td>部门:</td>
                 <td>
-                    <input id="dept" class=" easyui-combobox" name="deptId" data-options="valueField:'id',textField:'name',url:'${pageContext.request.contextPath}/findAllDeptInf.action'" >
+                    <span id="deptId"></span>
                 </td>
                 <td>职位:</td>
                 <td>
-                    <input id="job" class="easyui-combobox" name="jobId" data-options="valueField:'id',textField:'name',url:'${pageContext.request.contextPath}/findAllJobInf.action'">
+                   <span id="jobId"></span>
                 </td>
+                <td>邮政编码:</td>
+                <td><span id="pPostCode"></span></td>
             </tr>
             <tr>
                 <td colspan="3">
-                    <input type="button" class="class="class="easyui-textbox" value="申请修改" onclick="toChange()">
+                    <input type="button" class="class="class="easyui-textbox" value="修改" onclick="toChange()">
                 </td>
             </tr>
         </table>
@@ -101,10 +104,13 @@
                 if(data != null){
                     //绑定值
                     var obj = jQuery.parseJSON(data);
-                    $('#myInf').form('load', obj)
-                    $('#dept').combobox("setValue",parseInt(obj.deptId));
-                    $('#job').combobox('setValue',parseInt(obj.jobId));
-                    //$("input:radio[name=sex][value=obj.sex]").attr("checked",true);
+                    $('#myInf').form('load', obj);
+
+                    $('#deptId').text(obj.deptName);
+                    $('#jobId').text(obj.jobName);
+                    $('#pPostCode').text(obj.postCode);
+                    $('#pCardId').text(obj.cardId);
+                    $('#pName').text(obj.name);
                     if (obj.sex == 0){
                         $("[name='sex'][value='0']").prop("checked", "checked");
                     }else{

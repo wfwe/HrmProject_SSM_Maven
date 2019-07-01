@@ -52,13 +52,16 @@
         keditor.html("");
     }
 
+
     function saveArt() {
         $("#fm").form("submit", {
             url: '${pageContext.request.contextPath}/notice/add.action',
             onSubmit: function () {
                 return $(this).form("validate");
             },
+            beforeSend:ajaxLoading(),
             success: function (result) {
+                ajaxLoadEnd();
                 if (result == "ok") {
                     $.messager.alert("系统提示", "公告发布成功");
                     reset();

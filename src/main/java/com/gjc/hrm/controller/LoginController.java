@@ -99,7 +99,6 @@ public class LoginController {
 
     @RequestMapping("quitLogin.action")
     public String quitLogin(HttpServletRequest request) {
-        int i =1/0;
         request.getSession().removeAttribute("userName");
         request.getSession().removeAttribute("userId");
         request.getSession().removeAttribute("status");

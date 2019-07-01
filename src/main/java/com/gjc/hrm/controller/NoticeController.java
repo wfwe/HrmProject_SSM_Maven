@@ -72,11 +72,12 @@ public class NoticeController {
 
     @RequestMapping("/findPaging")
     @ResponseBody
-    public String findNoticePaging(int page,int rows,String startTime,String endTime,String noticeTitle) throws ParseException {
-        int count = noticeService.findNoticeCount(startTime,endTime,noticeTitle);
+    public String findNoticePaging(HttpServletRequest request,int page,int rows,String startTime,String endTime,String noticeTitle) throws ParseException {
+        int status = (int) request.getSession().getAttribute("status");
+        int count = noticeService.findNoticeCount(status,startTime,endTime,noticeTitle);
         PageBean pageBean = new PageBean(page,rows,count);
         pageBean.setTotalRecord(count);
-        List<NoticeUser> noticeUserList = noticeService.findNoticePaging(pageBean.getStartIndex(),pageBean.getPageSize(),startTime,endTime,noticeTitle);
+        List<NoticeUser> noticeUserList = noticeService.findNoticePaging(status,pageBean.getStartIndex(),pageBean.getPageSize(),startTime,endTime,noticeTitle);
         Map<String,Object> map = new HashMap<>();
         map.put("rows",noticeUserList);
         map.put("total",count);

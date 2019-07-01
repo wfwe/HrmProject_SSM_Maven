@@ -22,16 +22,16 @@
 </head>
 <body style="margin:1px;" id="ff">
 <table id="dg" title="公告管理" class="easyui-datagrid" pagination="true"
-       rownumbers="true" fit="true" data-options="pageSize:10"
+       rownumbers="true" fit="true" data-options="pageSize:20"
        url="${pageContext.request.contextPath}/notice/findPaging" toolbar="#tb">
     <thead data-options="frozen:true">
     <tr>
         <th field="cb" checkbox="true" align="center"></th>
         <th field="id" width="10%" align="center" hidden="true">编号</th>
-        <th field="noticeTitle" width="300" align="center">标题</th>
-        <th field="username" width="150" align="center">添加人</th>
-        <th field="noticeCreatedate" width="200" align="center">创建时间</th>
-        <th field="content" width="100" align="center" formatter="formatHref">操作</th>
+        <th field="noticeTitle" width="400" align="center">标题</th>
+        <th field="username" width="300" align="center">添加人</th>
+        <th field="noticeCreatedate" width="300" align="center">创建时间</th>
+        <th field="content" width="150" align="center" formatter="formatHref">操作</th>
     </tr>
     </thead>
 </table>

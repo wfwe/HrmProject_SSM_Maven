@@ -70,11 +70,6 @@ public class EmpInfController {
     @RequestMapping("/editEmpInf.action")
     @ResponseBody
     public String editEmpInf(EmployeeInf employeeInf){
-        if (employeeInf.getDeptId() == null || employeeInf.getJobId() == null
-                ||employeeInf.getName() == null || employeeInf.getName() == ""
-                ||employeeInf.getCardId() == null || employeeInf.getCardId() == ""
-                ||employeeInf.getSex() == null)
-            return "lack";
         int rst = empInfService.editEmpInf(employeeInf);
         if (rst ==1)
             return "ok";

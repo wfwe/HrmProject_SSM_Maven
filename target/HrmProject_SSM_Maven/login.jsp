@@ -50,6 +50,10 @@
     <div class="layui-login-text">
         <p>© 2019-2059 Gavin 版权所有</p>
     </div>
+    <div>
+        <input type="button" onclick="ajaxLoading()">
+        <input type="button" onclick="ajaxLoadEnd()">
+    </div>
 </div>
 <script type="text/javascript" src="${pageContext.request.contextPath}/login_style/layui.all.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/login_style/login.js"></script>
@@ -57,6 +61,7 @@
 <script type="text/javascript">
     $(document.body).ready(function (){
         $("#verifyImg").attr("src","${pageContext.request.contextPath}/getVerify.action?"+Math.random());
+        ajaxLoadEnd();
     });
     $(function(){
         $(".layui-canvs").jParticle({
@@ -70,10 +75,21 @@
     });
 
 
+    //采用jquery easyui loading css效果
+    function ajaxLoading(){
+        $("<div class=\"datagrid-mask\"></div>").css({display:"block",width:"100%",height:$(window).height()}).appendTo("body");
+        $("<div class=\"datagrid-mask-msg\"></div>").html("正在登录，请稍候。。。").appendTo("body").css({color:"white",display:"block",left:($(document.body).outerWidth(true) - 190) / 2,top:($(window).height() - 45) / 2});
+    }
+    function ajaxLoadEnd(){
+        $(".datagrid-mask").remove();
+        $(".datagrid-mask-msg").remove();
+    }
+
 
 
     function checkInf(){
         //location.href="index.html";
+
         var name = $('#loginname').val();
         var pass = $('#password').val();
         var username = $('#code').val();
@@ -90,6 +106,7 @@
             $('#upError').html("请输入验证码");
             return false;
         }
+        ajaxLoading();
         return true;
     }
 </script>

@@ -11,9 +11,9 @@ import java.util.List;
 public interface NoticeService {
     int addNotice(NoticeInf noticeInf) throws IOException, MessagingException;
 
-    List<NoticeUser> findNoticePaging(int startIndex, int pageSize, String startTime, String endTime, String noticeTitle) throws ParseException;
+    List<NoticeUser> findNoticePaging(int status, int startIndex, int pageSize, String startTime, String endTime, String noticeTitle) throws ParseException;
 
-    int findNoticeCount(String startTime, String endTime, String noticeTitle) throws ParseException;
+    int findNoticeCount(int status, String startTime, String endTime, String noticeTitle) throws ParseException;
 
     String findNoticeById(Integer id);
 

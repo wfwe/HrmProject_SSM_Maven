@@ -5,6 +5,8 @@ import com.gjc.hrm.domain.UserInfExample;
 import com.gjc.hrm.mapper.UserInfMapper;
 import com.gjc.hrm.service.UserInfService;
 import com.gjc.hrm.util.DateUtil;
+import com.gjc.hrm.util.MD5CrypUtil;
+import org.apache.commons.codec.digest.Md5Crypt;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -39,7 +41,9 @@ public class UserInfServiceImpl implements UserInfService {
         criteria.andLoginnameEqualTo(userInf.getLoginname());
         List<UserInf> userInfList = userInfMapper.selectByExample(userInfExample);
         if (userInfList.size() > 0){
-            if (userInfList.get(0).getPassword().equals(userInf.getPassword())){
+            String pp = MD5CrypUtil.getSalts(userInfList.get(0).getPassword());
+            String up = Md5Crypt.md5Crypt(userInf.getPassword().getBytes(),pp);
+            if (up.equals(userInfList.get(0).getPassword())){
                 //登录成功
                 rst = userInfList.get(0).getId();
                 return rst;
@@ -156,7 +160,8 @@ public class UserInfServiceImpl implements UserInfService {
         Boolean rst =false;
         for (int i=0; i<ids.length;i++){
             UserInf userInf = userInfMapper.selectByPrimaryKey(ids[i]);
-            userInf.setPassword(userInf.getLoginname().substring(userInf.getLoginname().length()-6,userInf.getLoginname().length()));
+            String pp = userInf.getLoginname().substring(userInf.getLoginname().length()-6,userInf.getLoginname().length());
+            userInf.setPassword(Md5Crypt.md5Crypt(pp.getBytes()));
             userInf.setLoginname(null);
             userInf.setStatus(null);
             userInf.setUsername(null);
