@@ -12,7 +12,7 @@
 </head>
 <body>
     <form id="myInf" method="post" class="easyui-form" >
-        <table cellpadding="10">
+        <table cellpadding="10" align="center" style="border-collapse:separate; border-spacing:18px;padding-top: 70px;font-family:'微软雅黑';font-size: 14px";>
             <tr>
                 <td><input type="hidden" name="id" id="id"></td>
             </tr>

@@ -151,18 +151,20 @@ public class NoticeServiceImpl implements NoticeService {
     }
 
     @Override
-    public int deleteNotice(int[] ids) {
-        Boolean rst =false;
-        for (int i=0; i<ids.length;i++){
-            int r = noticeInfMapper.deleteByPrimaryKey(ids[i]);
-            if (r == 1){
-                rst = true;
-            }
-        }
-        if (rst)
+    public int deleteNotice(String ids) {
+        int r = noticeInfMapper.deleteByPrimaryKey(Integer.valueOf(ids));
+        if (r == 1)
             return 1;
         else
             return 0;
+    }
+
+    @Override
+    public String findNew(int status) {
+        if (status == 1){
+            return noticeInfMapper.findEmpNew();
+        }
+        return noticeInfMapper.findNew();
     }
 
     /*public int send(String to,String subject,String content){

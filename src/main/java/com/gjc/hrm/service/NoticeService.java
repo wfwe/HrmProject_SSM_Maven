@@ -17,5 +17,7 @@ public interface NoticeService {
 
     String findNoticeById(Integer id);
 
-    int deleteNotice(int[] ids);
+    int deleteNotice(String ids);
+
+    String findNew(int status);
 }

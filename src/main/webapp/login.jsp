@@ -50,10 +50,6 @@
     <div class="layui-login-text">
         <p>© 2019-2059 Gavin 版权所有</p>
     </div>
-    <div>
-        <input type="button" onclick="ajaxLoading()">
-        <input type="button" onclick="ajaxLoadEnd()">
-    </div>
 </div>
 <script type="text/javascript" src="${pageContext.request.contextPath}/login_style/layui.all.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/login_style/login.js"></script>

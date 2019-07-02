@@ -58,12 +58,15 @@ public class NoticeController {
 
     @RequestMapping("/delete")
     @ResponseBody
-    public String delete(int[] ids){
-        if (ids.length == 0){
-            return "fail";
+    public String delete(String ids){
+        String[] arr = ids.split(",");
+        Boolean b = false;
+        for (String i:arr) {
+            int rst = noticeService.deleteNotice(i);
+            if (rst == 1)
+                b = true;
         }
-        int rst = noticeService.deleteNotice(ids);
-        if (rst == 1){
+        if (b){
             return "ok";
         }else {
             return "fail";
@@ -82,6 +85,13 @@ public class NoticeController {
         map.put("rows",noticeUserList);
         map.put("total",count);
         String rst = JSONObject.toJSON(map).toString();
+        return rst;
+    }
+
+    @RequestMapping(value = "/findNew/{status}",produces = {"text/html;charset=utf-8"})
+    @ResponseBody
+    public String findNew(@PathVariable int status){
+        String rst = noticeService.findNew(status);
         return rst;
     }
 }

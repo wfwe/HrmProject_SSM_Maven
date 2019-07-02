@@ -47,7 +47,7 @@ public class SendEmail {
         msg.setContent(msg1.getMsg(),"text/html;charset=UTF-8");
         msg.setSentDate(new Date());
         Transport.send(msg);
-        System.out.println("EmailUtil ssl协议邮件发送打印" +msg.toString());
+        //System.out.println("EmailUtil ssl协议邮件发送打印" +msg.toString());
         return true;
     }
 }

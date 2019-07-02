@@ -18,6 +18,10 @@
     <script charset="utf-8" src="${pageContext.request.contextPath}/kindeditor-4.1.10/kindeditor-all.js"></script>
     <script charset="utf-8" src="${pageContext.request.contextPath}/kindeditor-4.1.10/lang/zh_CN.js"></script>
     <script type="text/javascript" src="https://unpkg.com/xlsx@0.14.0/dist/xlsx.full.min.js"></script>
+
+
+
+
 </head>
 <body class="easyui-layout">
 <!-- begin of header -->
@@ -28,7 +32,10 @@
     <div class="wu-header-right">
         <p></p>
         <p id="pTime"></p>
-        <p><span><strong class="easyui-tooltip" title="2条未读消息">${pageContext.session.getAttribute("userName")}</strong>，欢迎您！&nbsp;&nbsp;</span>
+        <p>尊敬的
+            <span><strong class="easyui-tooltip" title="2条未读消息">${pageContext.session.getAttribute("realName")}</strong>
+                <c:if test="${status == 1}">员工</c:if><c:if test="${status == 2}">管理员</c:if><c:if test="${status == 3}">超级管理员</c:if>
+                ，欢迎您！&nbsp;&nbsp;</span>
             <a href="${pageContext.request.contextPath}/index.action">网站首页</a>|<a href="#">帮助中心</a>|<a href="${pageContext.request.contextPath}/quitLogin.action">安全退出</a></p>
 
     </div>
@@ -70,7 +77,7 @@
 <c:if test="${status  == 3}">
         <div title="系统设置" data-options="iconCls:'icon-wrench'" style="padding:5px;">
             <ul class="easyui-tree wu-side-tree">
-                <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-cog" data-link="#" iframe="0">日志操作</a></li>
+                <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-cog" data-link="views/log.jsp" iframe="0">日志操作</a></li>
             </ul>
         </div>
 </c:if>

@@ -160,6 +160,12 @@
     from notice_inf
     where id = #{id,jdbcType=INTEGER}
   </select>
+  <select id="findNew" resultType="java.lang.String">
+    select notice_content from notice_inf order by notice_createdate desc LIMIT 1;
+  </select>
+  <select id="findEmpNew" resultType="java.lang.String">
+    select notice_content from notice_inf where notice_people in (0,1) order by notice_createdate desc LIMIT 1;
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from notice_inf
     where id = #{id,jdbcType=INTEGER}

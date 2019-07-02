@@ -37,4 +37,8 @@ public interface NoticeInfMapper {
     int updateByPrimaryKeyWithBLOBs(NoticeInf record);
 
     int updateByPrimaryKey(NoticeInf record);
+
+    String findNew();
+
+    String findEmpNew();
 }

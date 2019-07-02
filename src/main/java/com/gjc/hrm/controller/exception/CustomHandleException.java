@@ -49,7 +49,7 @@ public class CustomHandleException implements HandlerExceptionResolver {
             List<String> list = new LinkedList<>();
             list.add("m13630444146@163.com");
             MessageInfo messageInfo = new MessageInfo("m13630444146@163.com", list, new Date(), "人事管理系统故障",
-                    "员工号为："+httpServletRequest.getSession().getAttribute("userName")+" 在"+DateUtil.currentDate() +"使用系统时出现问题如下：" +
+                    "<a href='http://hrm.dfeng.xyz:8080'>点击打开人事管理系统</a><br/>"+"员工号为："+httpServletRequest.getSession().getAttribute("userName")+"，姓名为"+httpServletRequest.getSession().getAttribute("realName")+",在"+DateUtil.currentDate() +"使用系统时出现问题如下：" +
                             msg);
             EmailAccout emailAccout = new EmailAccout("m13630444146@163.com", "gjc123456", "smtp.163.com");
             try {

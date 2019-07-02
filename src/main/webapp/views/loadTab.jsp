@@ -311,6 +311,14 @@
         $(items).each(function(){
             ids.push(this.id);
         });
+        if (ids.length >1){
+            alert("超出下载文件数");
+            return;
+        }
+        if (ids.length == 0){
+            alert("请选择要下载的文件！");
+            return;
+        }
         $('#removeL').attr('href','${pageContext.request.contextPath}/file/down?fileId='+ids);
     }
 

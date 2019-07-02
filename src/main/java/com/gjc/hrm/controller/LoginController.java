@@ -60,7 +60,7 @@ public class LoginController {
             request.getSession().setAttribute("userId",rst);
             UserInf userInfById = userInfService.findUserInfById(rst);
             request.getSession().setAttribute("status",userInfById.getStatus());
-            request.getSession().setAttribute("realName",userInf.getUsername());
+            request.getSession().setAttribute("realName",userInfById.getUsername());
             return "redirect: /index.action";
         }else if (rst == -3){
             error.put("error","请输入账号！");
