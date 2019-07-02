@@ -25,3 +25,25 @@
 * 1、	公司员工入职，在人事部办理入职手续，管理员将员工信息输入系统注册为员工，员工成功入职，并且自动成为系统的用户，初始密码默认为员工号的后六位，员工登录系统后可修改密码，忘记密码向相关部门提出申请，部门管理员拥有重置密码权限，员工可以查看系统给普通员工权限的相关信息，员工基本上只能查阅信息和下载公司公开给全体员工的文件。
 * 2、	系统的普通管理员相当于公司相关部门的负责人，拥有增删改查的权限，能对公司人事的各项事务进行处理。
 * 3、	系统的超级管理员拥有整个系统的所有权限。能对系统用户进行统一管理。
+
+# 系统运行图
+### 系统架构图
+![系统架构图](https://github.com/wfwe/Blog/blob/master/Ima/ssm%E6%9E%B6%E6%9E%84%E5%9B%BE-1.0-%E8%AF%A6%E7%89%88.png)
+
+### 系统登录界面
+![登录](https://github.com/wfwe/Blog/blob/master/Ima/%E7%99%BB%E5%BD%95.PNG)
+
+### 系统首页
+![首页]()
+### 个人信息
+![个人信息](https://github.com/wfwe/Blog/blob/master/Ima/%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF.PNG)
+### 管理中心
+![管理中心](https://github.com/wfwe/Blog/blob/master/Ima/%E7%AE%A1%E7%90%86.PNG)
+### 文件中心
+![文件中心](https://github.com/wfwe/Blog/blob/master/Ima/%E6%96%87%E4%BB%B6%E4%B8%AD%E5%BF%83.PNG)
+### 公告中心
+![公告中心](https://github.com/wfwe/Blog/blob/master/Ima/%E5%85%AC%E5%91%8A.PNG)
+
+# 系统升级
+### 下一代版本将加入安全框架shiro，以及加入切面编程日志记录用户操作
+### 期待下一次的版本
