@@ -314,12 +314,13 @@
         if (ids.length >1){
             alert("超出下载文件数");
             return;
-        }
-        if (ids.length == 0){
+        }else if (ids.length == 0){
             alert("请选择要下载的文件！");
             return;
+        }else {
+            $('#removeL').attr('href','${pageContext.request.contextPath}/file/down?fileId='+ids);
         }
-        $('#removeL').attr('href','${pageContext.request.contextPath}/file/down?fileId='+ids);
+
     }
 
 

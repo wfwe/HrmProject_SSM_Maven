@@ -89,11 +89,35 @@
             </tr>
             <tr>
                 <td colspan="3">
-                    <input type="button" class="class="class="easyui-textbox" value="修改" onclick="toChange()">
+                    <input type="button" class="easyui-textbox" value="修改" onclick="toChange()">
+                </td>
+                <td colspan="2">
+                    <input type="button" class="easyui-textbox" value="修改密码" onclick="rePasswordDialog()">
                 </td>
             </tr>
         </table>
     </form>
+
+    <!-- Begin of easyui-dialog -->
+    <div id="rePassword-dialog" class="easyui-dialog" data-options="closed:true,iconCls:'icon-save'" style="height:300px;width:500px; padding:20px;">
+        <form id="rePassword-form" method="post" class="easyui-form" >
+            <table>
+                <tr id="loginNameTr">
+                    <td align="right">旧密码:</td>
+                    <td><input type="password"id="oldPassword" name="oldPassword" class="easyui-validatebox wu-text" data-options="required:true,validType:'length[6,16]'"/></td>
+                </tr>
+                <tr id="passwordTr">
+                    <td align="right">新密 码:</td>
+                    <td><input type="password" name="newPassword" class="easyui-validatebox wu-text" id="newPassword" data-options="required:true,validType:'length[6,16]'"/></td>
+                </tr>
+                <tr id="rePasswordTr">
+                    <td valign="right" align="right">确认密码:</td>
+                    <td><input type="password" name="reNewPassword" id="password2" class="easyui-validatebox wu-text" required="true" validType="equalTo['#newPassword']"/></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <!-- End of easyui-dialog -->
 
 <script type="text/javascript">
 
@@ -143,6 +167,59 @@
             }
         });
     }
+
+    function rePasswordDialog() {
+        $('#rePassword-form').form('clear');
+        $('#rePassword-dialog').dialog({
+            closed: false,
+            modal: true,
+            title: "修改密码",
+            buttons: [{
+                text: '修改',
+                iconCls: 'icon-ok',
+                handler: changePassword
+            }, {
+                text: '取消',
+                iconCls: 'icon-cancel',
+                handler: function () {
+                    $('#rePassword-dialog').dialog('close');
+                }
+            }]
+        });
+    }
+
+    /**
+     * Name 修改
+     */
+    function changePassword(){
+        $('#rePassword-form').form('submit', {
+            url:'${pageContext.request.contextPath}/changePassword.action',
+            onSubmit : function() {
+                return $(this).form('enableValidation').form('validate');
+            },
+            success:function(data){
+                if(data == "ok"){
+                    $.messager.alert('修改成功', '密码修改成功', 'info');
+                    $('#rePassword-dialog').dialog('close');
+                }
+                else
+                {
+                    $.messager.alert('修改失败', '密码修改失败', 'error');
+                }
+            }
+        });
+    }
+
+    //完成两个密码效验
+    $.extend($.fn.validatebox.defaults.rules, {
+        /*必须和某个字段相等*/
+        equalTo : {
+            validator : function(value, param) {
+                return $(param[0]).val() == value;
+            },
+            message : '两次密码不一致'
+        }
+    });
 </script>
 
 </body>

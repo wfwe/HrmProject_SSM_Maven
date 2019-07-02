@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletRequest;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -95,6 +96,23 @@ public class UserInfController {
             return "lack";
         }
         int rst = userInfService.resetUserPasswordById(ids);
+        if (rst == 1){
+            return "ok";
+        }else {
+            return "fail";
+        }
+    }
+
+    @RequestMapping("/changePassword.action")
+    @ResponseBody
+    public String changePassword(HttpServletRequest request,String oldPassword, String newPassword, String reNewPassword){
+        if (oldPassword == null || oldPassword == "" ||
+                newPassword == null || newPassword == ""
+                || reNewPassword == null || reNewPassword == ""){
+            return "lack";
+        }
+        int userId = (int) request.getSession().getAttribute("userId");
+        int rst = userInfService.changePassword(userId,oldPassword,newPassword,reNewPassword);
         if (rst == 1){
             return "ok";
         }else {

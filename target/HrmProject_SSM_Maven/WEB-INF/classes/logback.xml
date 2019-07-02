@@ -13,7 +13,7 @@
     </appender>
     <appender name="rollingAppender"
               class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>D:\idea_workspacW\HrmProject_SSM_Maven/test.log</file>
+        <file>/test.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>/test-%d{yyyy-MM-dd}.log
             </fileNamePattern>

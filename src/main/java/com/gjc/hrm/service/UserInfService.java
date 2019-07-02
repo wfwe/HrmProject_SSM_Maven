@@ -24,4 +24,6 @@ public interface UserInfService {
     int resetUserPasswordById(int[] ids);
 
     List<String> findUserIsMannger();
+
+    int changePassword(int userId, String oldPassword, String newPassword, String reNewPassword);
 }

@@ -125,6 +125,7 @@ public class UserInfServiceImpl implements UserInfService {
 
     @Override
     public int addUserInf(UserInf userInf) {
+        userInf.setPassword(Md5Crypt.md5Crypt(userInf.getPassword().getBytes()));
         int rst = userInfMapper.insertSelective(userInf);
         return rst;
     }
@@ -181,5 +182,23 @@ public class UserInfServiceImpl implements UserInfService {
     public List<String> findUserIsMannger() {
         List<String> rst = userInfMapper.selectMannger();
         return rst;
+    }
+
+    @Override
+    public int changePassword(int userId,String oldPassword, String newPassword, String reNewPassword) {
+        UserInf userInf = findUserInfById(userId);
+        String pp = MD5CrypUtil.getSalts(userInf.getPassword());
+        String up = Md5Crypt.md5Crypt(oldPassword.getBytes(),pp);
+        if (up.equals(userInf.getPassword())){
+            if (newPassword.equals(reNewPassword)){
+                userInf.setPassword(Md5Crypt.md5Crypt(newPassword.getBytes()));
+                userInf.setCreatedate(null);
+                userInf.setUsername(null);
+                userInf.setStatus(null);
+                userInf.setLoginname(null);
+                return userInfMapper.updateByPrimaryKeySelective(userInf);
+            }
+        }
+        return 0;
     }
 }
