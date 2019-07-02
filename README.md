@@ -26,6 +26,10 @@
 * 2、	系统的普通管理员相当于公司相关部门的负责人，拥有增删改查的权限，能对公司人事的各项事务进行处理。
 * 3、	系统的超级管理员拥有整个系统的所有权限。能对系统用户进行统一管理。
 
+### 其他功能：设置自定义异常拦截器，异常跳转到友情界面并通知运维人员
+![错误报告](https://github.com/wfwe/Blog/blob/master/Ima/%E9%94%99%E9%A2%98%E6%8A%A5%E5%91%8A.jpg)
+![异常跳转页面](https://github.com/wfwe/Blog/blob/master/Ima/%E5%BC%82%E5%B8%B8.PNG)
+
 # 系统运行图
 ### 系统架构图
 ![系统架构图](https://github.com/wfwe/Blog/blob/master/Ima/ssm%E6%9E%B6%E6%9E%84%E5%9B%BE-1.0-%E8%AF%A6%E7%89%88.png)
