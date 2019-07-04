@@ -38,7 +38,7 @@
 ![登录](https://github.com/wfwe/Blog/blob/master/Ima/%E7%99%BB%E5%BD%95.PNG)
 
 ### 系统首页
-![首页]()
+![首页](https://github.com/wfwe/Blog/blob/master/Ima/%E9%A6%96%E9%A1%B5.PNG)
 ### 个人信息
 ![个人信息](https://github.com/wfwe/Blog/blob/master/Ima/%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF.PNG)
 ### 管理中心
