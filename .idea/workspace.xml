@@ -8,16 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d348624b-7aa3-4790-9ffb-f981cb76914d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UserInfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UserInfController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/UserInfService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/UserInfService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/UserInfServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/UserInfServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/addNotice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/addNotice.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/loadTab.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/loadTab.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/myInf.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/myInf.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/WEB-INF/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/WEB-INF/classes/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/WEB-INF/classes/spring/applicationContext-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/WEB-INF/classes/spring/applicationContext-dao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/applicationContext-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/applicationContext-dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HrmProject_SSM_Maven/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,66 +21,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="addNotice.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/addNotice.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="57" column="107" selection-start-line="57" selection-start-column="102" selection-end-line="57" selection-end-column="107" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserInfService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/UserInfService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserInfServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/UserInfServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="198" selection-start-line="198" selection-end-line="198" />
-              <folding>
-                <element signature="method#findAUserInfPaging#0;class#UserInfServiceImpl#0" />
-                <element signature="method#findAllUserCount#0;class#UserInfServiceImpl#0" />
-                <element signature="method#editUserInf#0;class#UserInfServiceImpl#0" />
-                <element signature="method#deleteUserInfById#0;class#UserInfServiceImpl#0" />
-                <element signature="method#resetUserPasswordById#0;class#UserInfServiceImpl#0" />
-                <element signature="method#findUserIsMannger#0;class#UserInfServiceImpl#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AopUtils.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.6.RELEASE/spring-aop-4.2.6.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="163" selection-start-line="163" selection-end-line="163" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReflectiveMethodInvocation.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.6.RELEASE/spring-aop-4.2.6.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="76" selection-start-line="76" selection-end-line="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="myInf.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/views/myInf.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="182" column="39" lean-forward="true" selection-start-line="182" selection-start-column="39" selection-end-line="182" selection-end-column="39" />
+            <state relative-caret-position="4550">
+              <caret line="182" column="39" selection-start-line="182" selection-start-column="39" selection-end-line="182" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,8 +45,51 @@
       <file leaf-file-name="NoticeController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/NoticeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="800">
+              <caret line="92" column="51" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="51" />
+              <folding>
+                <element signature="method#add#0;class#NoticeController#0" />
+                <element signature="method#queryContent#0;class#NoticeController#0" />
+                <element signature="method#findNoticeById#0;class#NoticeController#0" />
+                <element signature="method#delete#0;class#NoticeController#0" />
+                <element signature="method#findNoticePaging#0;class#NoticeController#0" />
+                <element signature="method#findNew#0;class#NoticeController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UploadController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UploadController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="900">
+              <caret line="156" column="44" selection-start-line="156" selection-start-column="4" selection-end-line="156" selection-end-column="44" />
+              <folding>
+                <element signature="method#findLoadPaging#0;class#UploadController#0" />
+                <element signature="method#upload#0;class#UploadController#0" />
+                <element signature="method#down#0;class#UploadController#0" />
+                <element signature="method#delete#0;class#UploadController#0" />
+                <element signature="method#edit#0;class#UploadController#0" />
+                <element signature="method#find#0;class#UploadController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserInfController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UserInfController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="900">
+              <caret line="107" column="121" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="121" />
+              <folding>
+                <element signature="method#findUserInfPaging#0;class#UserInfController#0" />
+                <element signature="method#addUserInf#0;class#UserInfController#0" />
+                <element signature="method#findUserInfById#0;class#UserInfController#0" />
+                <element signature="method#editUserInf#0;class#UserInfController#0" />
+                <element signature="method#deleteUserInfById#0;class#UserInfController#0" />
+                <element signature="method#resetUserPasswordById#0;class#UserInfController#0" />
+                <element signature="method#changePassword#0;class#UserInfController#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,11 +97,55 @@
       <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="947">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="675">
+              <caret line="109" column="25" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="25" />
               <folding>
+                <element signature="method#login#0;class#LoginController#0" />
                 <element signature="method#getVerify#0;class#LoginController#0" />
                 <element signature="method#quitLogin#0;class#LoginController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userTab.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/userTab.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9250">
+              <caret line="370" column="27" selection-start-line="370" selection-start-column="27" selection-end-line="370" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeptController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/DeptController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="800">
+              <caret line="79" column="34" selection-start-line="79" selection-start-column="3" selection-end-line="79" selection-end-column="34" />
+              <folding>
+                <element signature="method#findDeptInfById#0;class#DeptController#0" />
+                <element signature="method#deleteDeptInfById#0;class#DeptController#0" />
+                <element signature="method#editDeptInf#0;class#DeptController#0" />
+                <element signature="method#addDeptInf#0;class#DeptController#0" />
+                <element signature="method#findAllDeptInfPaging#0;class#DeptController#0" />
+                <element signature="method#findAllDeptInf#0;class#DeptController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JobController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/JobController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="850">
+              <caret line="79" column="33" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="33" />
+              <folding>
+                <element signature="method#findJobInfById#0;class#JobController#0" />
+                <element signature="method#deleteJobInf#0;class#JobController#0" />
+                <element signature="method#editJobInf#0;class#JobController#0" />
+                <element signature="method#AddJobInf#0;class#JobController#0" />
+                <element signature="method#FindAllJobInfPaging#0;class#JobController#0" />
+                <element signature="method#findAllJobInf#0;class#JobController#0" />
               </folding>
             </state>
           </provider>
@@ -119,17 +154,16 @@
       <file leaf-file-name="EmpInfController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/EmpInfController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="96" selection-start-line="96" selection-end-line="96" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmpInfServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/EmpInfServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="153" selection-start-line="153" selection-end-line="153" />
+            <state relative-caret-position="1050">
+              <caret line="94" column="56" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="56" />
+              <folding>
+                <element signature="method#findEmpInfPaging#0;class#EmpInfController#0" />
+                <element signature="method#findEmpInf#0;class#EmpInfController#0" />
+                <element signature="method#addEmpInf#0;class#EmpInfController#0" />
+                <element signature="method#findEmpInfById#0;class#EmpInfController#0" />
+                <element signature="method#deleteEmpInfById#0;class#EmpInfController#0" />
+                <element signature="method#findEmpInfByUserName#0;class#EmpInfController#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -152,8 +186,8 @@
       <find>save</find>
       <find>parseJSON</find>
       <find>emp-datagrid-4</find>
-      <find />
-      <find />
+      <find>&lt;c:if test=</find>
+      <find>&lt;c:if test=&quot;${</find>
       <find>support</find>
       <find>addTab</find>
       <find>shap</find>
@@ -221,7 +255,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/NoticeInfMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/NoticeInfMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/util/SendEmail.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/exception/CustomHandleException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/NoticeController.java" />
@@ -230,7 +263,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/welcome.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/log.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/applicationContext-dao.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/loadTab.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/UserInfService.java" />
@@ -239,6 +271,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/UserInfServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/myInf.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/addNotice.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/LoginController.java" />
       </list>
     </option>
   </component>
@@ -297,10 +331,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="555" />
-    <option name="y" value="60" />
+    <option name="x" value="412" />
+    <option name="y" value="61" />
     <option name="width" value="980" />
-    <option name="height" value="990" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -311,6 +345,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -334,67 +370,7 @@
               <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hrm" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="properties" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
@@ -419,12 +395,15 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="HrmProject_SSM_Maven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HrmProject_SSM_Maven" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -625,7 +604,12 @@
       <workItem from="1561943543495" duration="9771000" />
       <workItem from="1561975019117" duration="17077000" />
       <workItem from="1562034800048" duration="14586000" />
-      <workItem from="1562063289804" duration="4049000" />
+      <workItem from="1562063289804" duration="6712000" />
+      <workItem from="1562157032606" duration="624000" />
+      <workItem from="1562205090625" duration="851000" />
+      <workItem from="1562225124234" duration="834000" />
+      <workItem from="1562227025774" duration="457000" />
+      <workItem from="1562371314029" duration="43000" />
     </task>
     <task id="LOCAL-00001" summary="完善了部门、职位、用户的增删改查">
       <created>1561221720675</created>
@@ -683,11 +667,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562050093141</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="添加修改密码功能">
+      <created>1562070821046</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1562070821046</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259998000" />
+    <option name="totallyTimeSpent" value="265470000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -704,24 +695,24 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.2681883" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.10128388" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32952926" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32952926" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.16547789" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19686162" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21380697" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2272118" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32952926" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32952926" />
@@ -776,7 +767,8 @@
     <MESSAGE value="添加公告选择邮件通知功能，完善出错页面和邮件通知" />
     <MESSAGE value="完善登录和发布公告加载中" />
     <MESSAGE value="对用户密码加密，首页完善显示" />
-    <option name="LAST_COMMIT_MESSAGE" value="对用户密码加密，首页完善显示" />
+    <MESSAGE value="添加修改密码功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加修改密码功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -908,14 +900,6 @@
           <option name="timeStamp" value="91" />
         </line-breakpoint>
         <line-breakpoint type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/JobController.java</url>
-          <line>30</line>
-          <properties class="com.gjc.hrm.controller.JobController" method="deleteJobInf">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/mapper/EmployeeInfMapper.java</url>
           <line>34</line>
           <properties class="com.gjc.hrm.mapper.EmployeeInfMapper" method="findManagerEmail" />
@@ -925,10 +909,17 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="92" />
+      <option name="time" value="93" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/userTab.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9250">
+          <caret line="370" column="27" lean-forward="true" selection-start-line="370" selection-start-column="27" selection-end-line="370" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/util/MessageInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -1013,9 +1004,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/common.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/main.js" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -1086,20 +1074,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="140" column="9" lean-forward="true" selection-start-line="129" selection-start-column="7" selection-end-line="140" selection-end-column="9" />
-          <folding>
-            <element signature="method#findLoadPaging#0;class#UploadController#0" />
-            <element signature="method#upload#0;class#UploadController#0" />
-            <element signature="method#down#0;class#UploadController#0" />
-            <element signature="method#edit#0;class#UploadController#0" />
-            <element signature="method#find#0;class#UploadController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/NoticeService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -1111,10 +1085,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
           <caret line="155" column="19" lean-forward="true" selection-start-line="155" selection-start-column="19" selection-end-line="155" selection-end-column="19" />
-          <folding>
-            <element signature="method#addNotice#0;class#NoticeServiceImpl#0" />
-            <element signature="method#findNoticePaging#0;class#NoticeServiceImpl#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1122,11 +1092,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
           <caret line="35" column="38" lean-forward="true" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1134,16 +1099,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="78" column="49" lean-forward="true" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1156,9 +1111,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1250">
           <caret line="50" column="53" lean-forward="true" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
-          <folding>
-            <element signature="e#1419#1437#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1190,37 +1142,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/DeptController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/JobController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1390">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/userTab.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="135" column="7" lean-forward="true" selection-start-line="126" selection-start-column="3" selection-end-line="135" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UserInfController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="114" column="37" selection-start-line="114" selection-start-column="37" selection-end-line="114" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/UserInfService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
@@ -1228,23 +1149,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/EmpInfController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/EmpInfServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="3400">
           <caret line="153" selection-start-line="153" selection-end-line="153" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/service/impl/UserInfServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
+        <state relative-caret-position="2050">
           <caret line="198" selection-start-line="198" selection-end-line="198" />
           <folding>
             <element signature="method#findAUserInfPaging#0;class#UserInfServiceImpl#0" />
@@ -1259,50 +1173,149 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.6.RELEASE/spring-aop-4.2.6.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="3300">
           <caret line="163" selection-start-line="163" selection-end-line="163" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.6.RELEASE/spring-aop-4.2.6.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
+        <state relative-caret-position="1300">
           <caret line="76" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/addNotice.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="57" column="63" selection-start-line="57" selection-start-column="63" selection-end-line="57" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/myInf.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4550">
+          <caret line="182" column="39" selection-start-line="182" selection-start-column="39" selection-end-line="182" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/userTab.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9250">
+          <caret line="370" column="27" selection-start-line="370" selection-start-column="27" selection-end-line="370" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/DeptController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="79" column="34" selection-start-line="79" selection-start-column="3" selection-end-line="79" selection-end-column="34" />
+          <folding>
+            <element signature="method#findDeptInfById#0;class#DeptController#0" />
+            <element signature="method#deleteDeptInfById#0;class#DeptController#0" />
+            <element signature="method#editDeptInf#0;class#DeptController#0" />
+            <element signature="method#addDeptInf#0;class#DeptController#0" />
+            <element signature="method#findAllDeptInfPaging#0;class#DeptController#0" />
+            <element signature="method#findAllDeptInf#0;class#DeptController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/JobController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="79" column="33" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="33" />
+          <folding>
+            <element signature="method#findJobInfById#0;class#JobController#0" />
+            <element signature="method#deleteJobInf#0;class#JobController#0" />
+            <element signature="method#editJobInf#0;class#JobController#0" />
+            <element signature="method#AddJobInf#0;class#JobController#0" />
+            <element signature="method#FindAllJobInfPaging#0;class#JobController#0" />
+            <element signature="method#findAllJobInf#0;class#JobController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/EmpInfController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="94" column="56" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="56" />
+          <folding>
+            <element signature="method#findEmpInfPaging#0;class#EmpInfController#0" />
+            <element signature="method#findEmpInf#0;class#EmpInfController#0" />
+            <element signature="method#addEmpInf#0;class#EmpInfController#0" />
+            <element signature="method#findEmpInfById#0;class#EmpInfController#0" />
+            <element signature="method#deleteEmpInfById#0;class#EmpInfController#0" />
+            <element signature="method#findEmpInfByUserName#0;class#EmpInfController#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="947">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="675">
+          <caret line="109" column="25" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="25" />
           <folding>
+            <element signature="method#login#0;class#LoginController#0" />
             <element signature="method#getVerify#0;class#LoginController#0" />
             <element signature="method#quitLogin#0;class#LoginController#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/myInf.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/NoticeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="182" column="39" lean-forward="true" selection-start-line="182" selection-start-column="39" selection-end-line="182" selection-end-column="39" />
+        <state relative-caret-position="800">
+          <caret line="92" column="51" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="51" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="method#add#0;class#NoticeController#0" />
+            <element signature="method#queryContent#0;class#NoticeController#0" />
+            <element signature="method#findNoticeById#0;class#NoticeController#0" />
+            <element signature="method#delete#0;class#NoticeController#0" />
+            <element signature="method#findNoticePaging#0;class#NoticeController#0" />
+            <element signature="method#findNew#0;class#NoticeController#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/NoticeController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UploadController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="900">
+          <caret line="156" column="44" selection-start-line="156" selection-start-column="4" selection-end-line="156" selection-end-column="44" />
+          <folding>
+            <element signature="method#findLoadPaging#0;class#UploadController#0" />
+            <element signature="method#upload#0;class#UploadController#0" />
+            <element signature="method#down#0;class#UploadController#0" />
+            <element signature="method#delete#0;class#UploadController#0" />
+            <element signature="method#edit#0;class#UploadController#0" />
+            <element signature="method#find#0;class#UploadController#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/addNotice.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gjc/hrm/controller/UserInfController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="57" column="107" selection-start-line="57" selection-start-column="102" selection-end-line="57" selection-end-column="107" />
+        <state relative-caret-position="900">
+          <caret line="107" column="121" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="121" />
+          <folding>
+            <element signature="method#findUserInfPaging#0;class#UserInfController#0" />
+            <element signature="method#addUserInf#0;class#UserInfController#0" />
+            <element signature="method#findUserInfById#0;class#UserInfController#0" />
+            <element signature="method#editUserInf#0;class#UserInfController#0" />
+            <element signature="method#deleteUserInfById#0;class#UserInfController#0" />
+            <element signature="method#resetUserPasswordById#0;class#UserInfController#0" />
+            <element signature="method#changePassword#0;class#UserInfController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

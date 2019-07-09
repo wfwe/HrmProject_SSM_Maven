@@ -36,7 +36,7 @@
             <span><strong class="easyui-tooltip" title="2条未读消息">${pageContext.session.getAttribute("realName")}</strong>
                 <c:if test="${status == 1}">员工</c:if><c:if test="${status == 2}">管理员</c:if><c:if test="${status == 3}">超级管理员</c:if>
                 ，欢迎您！&nbsp;&nbsp;</span>
-            <a href="${pageContext.request.contextPath}/index.action">网站首页</a>|<a href="#">帮助中心</a>|<a href="${pageContext.request.contextPath}/quitLogin.action">安全退出</a></p>
+            <a href="${pageContext.request.contextPath}/index.action">网站首页</a>|<a href="https://github.com/wfwe/HrmProject_SSM_Maven/blob/master/README.md">帮助中心</a>|<a href="${pageContext.request.contextPath}/quitLogin.action">安全退出</a></p>
 
     </div>
 </div>
